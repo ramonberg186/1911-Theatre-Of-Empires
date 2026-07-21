@@ -2931,7 +2931,7 @@
 	<playerProduction player="Dutch" frontier="DutchFrontier"/>
 	<playerProduction player="Portuguese" frontier="PortugueseFrontier"/>
   </production>
-  
+
   <technology>
     <technologies>
       <!-- Tier 1 Techs (Category Leaders) -->
@@ -2940,34 +2940,34 @@
       <techname name="defensiveTactics"/>
       <techname name="fleetAction"/>
       <techname name="offensiveTactics"/>
-      
+
       <!-- Tier 2 Techs (require Tier 1) -->
       <!-- Economic Reforms tier -->
       <techname name="workingWomen"/>
       <techname name="warBonds"/>
       <techname name="industry"/>
-      
+
       <!-- Science tier -->
       <techname name="lateFighter"/>
       <techname name="aircraftCarrier"/>
       <techname name="zeppelin"/>
-      
+
       <!-- Defensive Tactics tier -->
       <techname name="bunkers"/>
       <techname name="mine"/>
       <techname name="heavyGun"/>
-      
+
       <!-- Fleet Action tier -->
       <techname name="convoys"/>
       <techname name="subWarfare"/>
       <techname name="dockyards"/>
-      
+
       <!-- Offensive Tactics tier -->
       <techname name="gas"/>
       <techname name="creepingBarrage"/>
       <techname name="armour"/>
     </technologies>
-    
+
     <!-- Shared tech tree for all countries -->
     <category name="Economic Reforms" tier="1">
       <tech name="economicReforms"/>
@@ -2981,7 +2981,7 @@
     <category name="Industry" tier="2" requires="economicReforms">
       <tech name="industry"/>
     </category>
-    
+
     <category name="Science" tier="1">
       <tech name="science"/>
     </category>
@@ -2994,7 +2994,7 @@
     <category name="Zeppelins" tier="2" requires="science">
       <tech name="zeppelin"/>
     </category>
-    
+
     <category name="Defensive Tactics" tier="1">
       <tech name="defensiveTactics"/>
     </category>
@@ -3007,7 +3007,7 @@
     <category name="Heavy Guns" tier="2" requires="defensiveTactics">
       <tech name="heavyGun"/>
     </category>
-    
+
     <category name="Fleet Action" tier="1">
       <tech name="fleetAction"/>
     </category>
@@ -3020,7 +3020,7 @@
     <category name="Dockyards" tier="2" requires="fleetAction">
       <tech name="dockyards"/>
     </category>
-    
+
     <category name="Offensive Tactics" tier="1">
       <tech name="offensiveTactics"/>
     </category>
@@ -3034,7 +3034,7 @@
       <tech name="armour"/>
     </category>
   </technology>
-  
+
   <attachmentList>
     <attachment name="techAttachment" attachTo="Japanese" javaClass="TechAttachment" type="player">
       <option name="aARadar" value="false"/>
@@ -3084,7 +3084,7 @@
       <option name="aARadar" value="false"/>
 	  <option name="techCost" value="5"/>
     </attachment>
-    
+
     <!-- Tech Ability Attachments - define what each tech does -->
     <attachment name="techAbilityAttachment" attachTo="warBonds" javaClass="TechAbilityAttachment" type="technology">
       <option name="warBondDiceSides" value="6"/>
@@ -3122,7 +3122,7 @@
     <attachment name="techAbilityAttachment" attachTo="gas" javaClass="TechAbilityAttachment" type="technology">
       <option name="attackBonus" value="1:gas"/>
     </attachment>
-    
+
     <!-- Unit Attachments follow below -->
     <attachment name="unitAttachment" attachTo="infantry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="movement" value="1"/>
@@ -3281,7 +3281,7 @@
       <option name="constructionsPerTerrPerTypePerTurn" value="3"/>
       <option name="maxConstructionsPerTypePerTerr" value="1000"/>
     </attachment>
-	
+
     <attachment name="territoryAttachment" attachTo="Aden" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
     </attachment>
@@ -4782,7 +4782,7 @@
     <attachment name="territoryAttachment" attachTo="Yemen" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
     </attachment>
-	
+
 <attachment name="territoryAttachment" attachTo="Sea Zone 1 Hudson Bay" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
 <option name="production" value="1"/>
 </attachment>
@@ -5130,7 +5130,7 @@
 <attachment name="territoryAttachment" attachTo="Sea Zone 147 Gulf of California" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"> <option name="production" value="1"/> </attachment>
 
 <attachment name="territoryAttachment" attachTo="Sea Zone 153 Pacific Ocean" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"> <option name="production" value="1"/> </attachment>
-	
+
     <!-- <attachment name="canalAttachment1" attachTo="Sea Zone 41 Caribbean Sea" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
       <option name="canalName" value="Panama Canal"/>
       <option name="landTerritories" value="Panama"/>
@@ -5194,7 +5194,7 @@
     <attachment name="conditionAttachmentWomenPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="workingWomen" count="1"/>
     </attachment>
-    
+
     <!-- lateFighter enables late fighter production -->
     <attachment name="conditionAttachmentLateFighterJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="lateFighter" count="1"/>
@@ -5232,7 +5232,7 @@
     <attachment name="conditionAttachmentLateFighterPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="lateFighter" count="1"/>
     </attachment>
-    
+
     <!-- aircraftCarrier enables carrier production -->
     <attachment name="conditionAttachmentAircraftCarrierJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="aircraftCarrier" count="1"/>
@@ -5270,7 +5270,7 @@
     <attachment name="conditionAttachmentAircraftCarrierPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="aircraftCarrier" count="1"/>
     </attachment>
-    
+
     <!-- armour enables tank production -->
     <attachment name="conditionAttachmentArmourJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="armour" count="1"/>
@@ -5308,7 +5308,7 @@
     <attachment name="conditionAttachmentArmourPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="armour" count="1"/>
     </attachment>
-    
+
     <!-- dockyards enables dockyards variant naval units -->
     <attachment name="conditionAttachmentDockyardsJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="dockyards" count="1"/>
@@ -5346,80 +5346,156 @@
     <attachment name="conditionAttachmentDockyardsPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="dockyards" count="1"/>
     </attachment>
-    
-    <!-- Science tech bonus: +1 tech token per turn for each country with science researched -->
-    <attachment name="objectiveAttachment_Science_Japanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
+
+    <!-- Science: Gain 1 free tech token each turn -->
+
+    <attachment name="conditionAttachmentScienceJ"
+        attachTo="Japanese"
+        javaClass="RulesAttachment"
+        type="player">
+        <option name="techs" value="science" count="1"/>
     </attachment>
-    <attachment name="objectiveAttachment_Science_Chinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
+
+    <attachment name="triggerAttachmentScienceJ"
+        attachTo="Japanese"
+        javaClass="TriggerAttachment"
+        type="player">
+        <option name="trigger" value="conditionAttachmentScienceJ"/>
+        <option name="resource" value="techTokens:1"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
     </attachment>
-    <attachment name="objectiveAttachment_Science_Americans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
+    <attachment name="conditionAttachmentScienceC"
+        attachTo="Chinese"
+        javaClass="RulesAttachment"
+        type="player">
+        <option name="techs" value="science" count="1"/>
     </attachment>
-    <attachment name="objectiveAttachment_Science_British" attachTo="British" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
+
+    <attachment name="triggerAttachmentScienceC"
+        attachTo="Chinese"
+        javaClass="TriggerAttachment"
+        type="player">
+        <option name="trigger" value="conditionAttachmentScienceC"/>
+        <option name="resource" value="techTokens:1"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:chineseTechActivation"/>
     </attachment>
-    <attachment name="objectiveAttachment_Science_Germans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
+
+    <attachment name="conditionAttachmentScienceA"
+        attachTo="Americans"
+        javaClass="RulesAttachment"
+        type="player">
+        <option name="techs" value="science" count="1"/>
     </attachment>
-    <attachment name="objectiveAttachment_Science_French" attachTo="French" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
+
+    <attachment name="triggerAttachmentScienceA"
+        attachTo="Americans"
+        javaClass="TriggerAttachment"
+        type="player">
+        <option name="trigger" value="conditionAttachmentScienceA"/>
+        <option name="resource" value="techTokens:1"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:americanTechActivation"/>
     </attachment>
-    <attachment name="objectiveAttachment_Science_Austrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
-    </attachment>
-    <attachment name="objectiveAttachment_Science_Italians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
-    </attachment>
-    <attachment name="objectiveAttachment_Science_Ottomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
-    </attachment>
-    <attachment name="objectiveAttachment_Science_Russians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
-    </attachment>
-    <attachment name="objectiveAttachment_Science_Dutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
-    </attachment>
-    <attachment name="objectiveAttachment_Science_Portuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-      <option name="objectiveValue" value="0"/>
-      <option name="techs" value="science" count="1"/>
-      <option name="resourceCount" value="1:techTokens"/>
-      <option name="eachTurn" value="true"/>
-    </attachment>
+    <!-- British -->
+<attachment name="conditionAttachmentScienceB" attachTo="British" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceB" attachTo="British" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceB"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:britishTechActivation"/>
+</attachment>
+
+<!-- Germans -->
+<attachment name="conditionAttachmentScienceG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceG"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:germanTechActivation"/>
+</attachment>
+
+<!-- French -->
+<attachment name="conditionAttachmentScienceF" attachTo="French" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceF" attachTo="French" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceF"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:frenchTechActivation"/>
+</attachment>
+
+<!-- Austrians -->
+<attachment name="conditionAttachmentScienceAUS" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceAUS" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceAUS"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:austrianTechActivation"/>
+</attachment>
+
+<!-- Italians -->
+<attachment name="conditionAttachmentScienceI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceI"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:italianTechActivation"/>
+</attachment>
+
+<!-- Ottomans -->
+<attachment name="conditionAttachmentScienceO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceO"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:ottomanTechActivation"/>
+</attachment>
+
+<!-- Russians -->
+<attachment name="conditionAttachmentScienceR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceR"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:russianTechActivation"/>
+</attachment>
+
+<!-- Dutch -->
+<attachment name="conditionAttachmentScienceD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceD"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:dutchTechActivation"/>
+</attachment>
+
+<!-- Portuguese -->
+<attachment name="conditionAttachmentScienceP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="science" count="1"/>
+</attachment>
+<attachment name="triggerAttachmentScienceP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentScienceP"/>
+    <option name="resource" value="techTokens:1"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:portugueseTechActivation"/>
+</attachment>
 
 <!--  National Objectives -->
 
@@ -5433,7 +5509,7 @@
 
       <option name="alliedOwnershipTerritories" value="Java:Sumatra:Borneo:Celebes" count="4"/>
 
-    </attachment> 
+    </attachment>
 
 
   </attachmentList>
@@ -5840,7 +5916,7 @@
 	  <territoryOwner territory="Qinghai" owner="Chinese"/>
 	  <territoryOwner territory="Sinkiang" owner="Chinese"/>
 	  <territoryOwner territory="Outer Mongolia" owner="Chinese"/>
-	  
+
 	  <territoryOwner territory="Lisbon" owner="Portuguese"/>
 	  <territoryOwner territory="Algarve" owner="Portuguese"/>
 	  <territoryOwner territory="Norte" owner="Portuguese"/>
@@ -5853,7 +5929,7 @@
 	  <territoryOwner territory="East Timor" owner="Portuguese"/>
 	  <territoryOwner territory="Macao" owner="Portuguese"/>
 
-	  
+
 <territoryOwner territory="Belgium" owner="Dutch"/>
   <territoryOwner territory="Amsterdam" owner="Dutch"/>
 	  <territoryOwner territory="Netherlands" owner="Dutch"/>
@@ -5863,7 +5939,7 @@
 	  <territoryOwner territory="Borneo" owner="Dutch"/>
 	  <territoryOwner territory="Celebes" owner="Dutch"/>
 	  <territoryOwner territory="Dutch New Guinea" owner="Dutch"/>
-	  
+
 <territoryOwner territory="Sea Zone 1 Hudson Bay" owner="British"/>
 
 <territoryOwner territory="Sea Zone 2 Baffin Bay" owner="British"/>
@@ -6290,7 +6366,7 @@
 	  <unitPlacement unitType="infantry" territory="Gibraltar" quantity="2" owner="British"/>
 	  <unitPlacement unitType="fighter" territory="Gibraltar" quantity="1" owner="British"/>
 	  <unitPlacement unitType="trench" territory="Gibraltar" quantity="1" owner="British"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Washington D.C." quantity="1" owner="Americans"/>
 	  <unitPlacement unitType="factory" territory="New York" quantity="1" owner="Americans"/>
 	  <unitPlacement unitType="factory" territory="Chicago" quantity="1" owner="Americans"/>
@@ -6392,7 +6468,7 @@
 	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 30 Mid Atlantic" quantity="1" owner="Americans"/>
 	  <unitPlacement unitType="destroyer" territory="Sea Zone 29 Mid Atlantic" quantity="1" owner="Americans"/>
 	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 29 Mid Atlantic" quantity="1" owner="Americans"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Paris" quantity="1" owner="French"/>
 	  <unitPlacement unitType="factory" territory="Brittany" quantity="1" owner="French"/>
 	  <unitPlacement unitType="factory" territory="Marseilles" quantity="2" owner="French"/>
@@ -6477,7 +6553,7 @@
 	  <unitPlacement unitType="infantry" territory="Picardy" quantity="1" owner="French"/>
 	  <unitPlacement unitType="infantry" territory="Paris" quantity="3" owner="French"/>
 	  <unitPlacement unitType="artillery" territory="Paris" quantity="1" owner="French"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Berlin" quantity="1" owner="Germans"/>
 	  <unitPlacement unitType="factory" territory="Bavaria" quantity="1" owner="Germans"/>
 	  <unitPlacement unitType="factory" territory="Mecklenburg" quantity="1" owner="Germans"/>
@@ -6597,7 +6673,7 @@
 	  <unitPlacement unitType="infantry" territory="East Prussia" quantity="4" owner="Germans"/>
 	  <unitPlacement unitType="cavalry" territory="East Prussia" quantity="1" owner="Germans"/>
 	  <unitPlacement unitType="artillery" territory="East Prussia" quantity="1" owner="Germans"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Rome" quantity="1" owner="Italians"/>
 	  <unitPlacement unitType="factory" territory="Tripoli" quantity="1" owner="Italians"/>
 	  <unitPlacement unitType="factory" territory="Venice" quantity="1" owner="Italians"/>
@@ -6635,7 +6711,7 @@
 	  <unitPlacement unitType="transport" territory="Sea Zone 58 Tyrrhenian Sea" quantity="1" owner="Italians"/>
 	  <unitPlacement unitType="cruiser" territory="Sea Zone 59 Central Mediterranean" quantity="1" owner="Italians"/>
 	  <unitPlacement unitType="transport" territory="Sea Zone 59 Central Mediterranean" quantity="1" owner="Italians"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Vienna" quantity="1" owner="Austrians"/>
 	  <unitPlacement unitType="factory" territory="Hungary" quantity="1" owner="Austrians"/>
 	  <unitPlacement unitType="factory" territory="Trieste" quantity="1" owner="Austrians"/>
@@ -6673,7 +6749,7 @@
 	  <unitPlacement unitType="artillery" territory="Galicia" quantity="2" owner="Austrians"/>
 	  <unitPlacement unitType="cavalry" territory="Galicia" quantity="3" owner="Austrians"/>
 	  <unitPlacement unitType="fighter" territory="Galicia" quantity="1" owner="Austrians"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="St. Petersburg" quantity="1" owner="Russians"/>
 	  <unitPlacement unitType="factory" territory="Warsaw" quantity="1" owner="Russians"/>
 	  <unitPlacement unitType="factory" territory="Volgograd" quantity="1" owner="Russians"/>
@@ -6791,7 +6867,7 @@
   <unitPlacement unitType="artillery" territory="Romania" quantity="2" owner="Russians"/>
   <unitPlacement unitType="infantry" territory="Serbia" quantity="4" owner="Russians"/>
 
-	  
+
 	  <unitPlacement unitType="factory" territory="Constantinople" quantity="1" owner="Ottomans"/>
 	  <unitPlacement unitType="factory" territory="Damascus" quantity="1" owner="Ottomans"/>
 	  <unitPlacement unitType="factory" territory="Mecca" quantity="1" owner="Ottomans"/>
@@ -6841,7 +6917,7 @@
 	  <unitPlacement unitType="infantry" territory="Bulgaria" quantity="1" owner="Ottomans"/>
 	  <unitPlacement unitType="infantry" territory="Macedonia" quantity="1" owner="Ottomans"/>
 	  <unitPlacement unitType="infantry" territory="Albania" quantity="1" owner="Ottomans"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Tokyo" quantity="1" owner="Japanese"/>
 	  <unitPlacement unitType="factory" territory="Kyoto" quantity="1" owner="Japanese"/>
 	  <unitPlacement unitType="factory" territory="Kyushu" quantity="1" owner="Japanese"/>
@@ -6896,7 +6972,7 @@
 	  <unitPlacement unitType="destroyer" territory="Sea Zone 139 Sea of Okhotsk" quantity="1" owner="Japanese"/>
 	  <unitPlacement unitType="cruiser" territory="Sea Zone 139 Sea of Okhotsk" quantity="2" owner="Japanese"/>
 	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 139 Sea of Okhotsk" quantity="1" owner="Japanese"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Peking" quantity="1" owner="Chinese"/>
 	  <unitPlacement unitType="factory" territory="Yan'an" quantity="1" owner="Chinese"/>
 	  <unitPlacement unitType="factory" territory="Nanking" quantity="1" owner="Chinese"/>
@@ -6955,10 +7031,10 @@
 	  <unitPlacement unitType="infantry" territory="Hainan" quantity="2" owner="Chinese"/>
 	  <unitPlacement unitType="destroyer" territory="Sea Zone 128 Gulf of Tonkin" quantity="2" owner="Chinese"/>
 	  <unitPlacement unitType="cruiser" territory="Sea Zone 128 Gulf of Tonkin" quantity="1" owner="Chinese"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Amsterdam" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="factory" territory="Java" quantity="1" owner="Dutch"/>
-	 
+
 	  <unitPlacement unitType="infantry" territory="Netherlands" quantity="2" owner="Dutch"/>
 	  <unitPlacement unitType="artillery" territory="Netherlands" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="infantry" territory="Amsterdam" quantity="6" owner="Dutch"/>
@@ -6998,7 +7074,7 @@
 	  <unitPlacement unitType="transport" territory="Sea Zone 124 Celebes Sea" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="submarine" territory="Sea Zone 124 Celebes Sea" quantity="2" owner="Dutch"/>
 	  <unitPlacement unitType="destroyer" territory="Sea Zone 124 Celebes Sea" quantity="1" owner="Dutch"/>
-	  
+
 	  <unitPlacement unitType="factory" territory="Lisbon" quantity="1" owner="Portuguese"/>
 	  <unitPlacement unitType="factory" territory="Goa" quantity="1" owner="Portuguese"/>
 	  <unitPlacement unitType="factory" territory="East Timor" quantity="1" owner="Portuguese"/>
@@ -7023,10 +7099,10 @@
 	  <unitPlacement unitType="transport" territory="Sea Zone 119 Timor Sea" quantity="1" owner="Portuguese"/>
 	  <unitPlacement unitType="cruiser" territory="Sea Zone 119 Timor Sea" quantity="2" owner="Portuguese"/>
 	  <unitPlacement unitType="infantry" territory="Macao" quantity="4" owner="Portuguese"/>
-	  
+
 	  <unitPlacement unitType="infantry" territory="Crete" quantity="1"/>
 	  <unitPlacement unitType="infantry" territory="Greece" quantity="3"/>
-	
+
 
 	  <unitPlacement unitType="infantry" territory="Majorca" quantity="1"/>
 	  <unitPlacement unitType="infantry" territory="Leon" quantity="4"/>
@@ -7046,7 +7122,7 @@
 	  <unitPlacement unitType="infantry" territory="Sweden" quantity="4"/>
 	  <unitPlacement unitType="infantry" territory="Iceland" quantity="2"/>
 
-	  
+
 	  <unitPlacement unitType="infantry" territory="Malilla" quantity="1"/>
 	  <unitPlacement unitType="infantry" territory="Ceuta" quantity="1"/>
 	  <unitPlacement unitType="infantry" territory="Rio de Oro" quantity="2"/>
@@ -7054,7 +7130,7 @@
 	  <unitPlacement unitType="infantry" territory="Ethiopia" quantity="5"/>
 	  <unitPlacement unitType="infantry" territory="Rio Muni" quantity="2"/>
 	  <unitPlacement unitType="infantry" territory="Congo" quantity="4"/>
-	  
+
 	  <unitPlacement unitType="infantry" territory="Arabia" quantity="4"/>
 	  <unitPlacement unitType="infantry" territory="Yemen" quantity="3"/>
 	  <unitPlacement unitType="infantry" territory="Al-Dammam" quantity="4"/>
@@ -7065,7 +7141,7 @@
 	  <unitPlacement unitType="infantry" territory="Tehran" quantity="4"/>
 	  <unitPlacement unitType="infantry" territory="Nepal" quantity="3"/>
 	  <unitPlacement unitType="infantry" territory="Siam" quantity="9"/>
-	  
+
 	  <unitPlacement unitType="infantry" territory="Greenland" quantity="2"/>
 	  <unitPlacement unitType="infantry" territory="Canary Islands" quantity="2"/>
 	  <unitPlacement unitType="infantry" territory="Dominica" quantity="2"/>
@@ -7087,7 +7163,7 @@
 	  <unitPlacement unitType="infantry" territory="Honduras" quantity="4"/>
 	  <unitPlacement unitType="infantry" territory="Nicaragua" quantity="4"/>
 	  <unitPlacement unitType="infantry" territory="Costa Rica" quantity="4"/>
-	  
+
 	  <unitPlacement unitType="infantry" territory="Colombia" quantity="6"/>
 	  <unitPlacement unitType="infantry" territory="Venezuela" quantity="6"/>
 	  <unitPlacement unitType="infantry" territory="Caracas" quantity="5"/>
@@ -7212,7 +7288,7 @@
 	<property name="Transport Control Sea Zone" value="false" editable="false">
       <boolean/>
     </property>
-	
+
     <property name="neutralCharge" value="0"/>
     <property name="maxFactoriesPerTerritory" value="1"/>
     <property name="Sub Control Sea Zone Restricted" value="true" editable="true">
@@ -7291,7 +7367,7 @@ A scenario based around an early Second Sino-Japanese War that triggers a war be
 		<td>Conscripts</td>
         <td>Industry</td>
         <td>Heavy Guns</td>
-    </tr>	
+    </tr>
 
     <tr>
         <td>Aircraft Carriers</td>
@@ -7396,7 +7472,7 @@ A scenario based around an early Second Sino-Japanese War that triggers a war be
 		<td>Zeppelins</td>
         <td>Bunkers</td>
         <td>Tanks</td>
-    </tr>	
+    </tr>
 
     <tr>
         <td>Conscripts</td>
