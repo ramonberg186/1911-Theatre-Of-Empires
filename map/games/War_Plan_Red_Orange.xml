@@ -6555,6 +6555,80 @@
     <attachment name="conditionAttachmentDockyardsPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="dockyards" count="1"/>
     </attachment>
+    
+    <!-- Science tech bonus: +1 tech token per turn for each country with science researched -->
+    <attachment name="objectiveAttachment_Science_Japanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Chinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Americans" attachTo="Americans" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_British" attachTo="British" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Germans" attachTo="Germans" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_French" attachTo="French" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Austrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Italians" attachTo="Italians" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Ottomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Russians" attachTo="Russians" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Dutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
+    <attachment name="objectiveAttachment_Science_Portuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+      <option name="objectiveValue" value="0"/>
+      <option name="techs" value="science" count="1"/>
+      <option name="resourceCount" value="1:techTokens"/>
+      <option name="eachTurn" value="true"/>
+    </attachment>
 
 <!--  National Objectives -->
 
