@@ -2934,185 +2934,105 @@
   
   <technology>
     <technologies>
-        <techname name="conscript"/>
-        <techname name="tank"/>            
-        <techname name="gas"/>
-        <techname name="aircraftCarrier"/>
-        <techname name="industry"/>            
-        <techname name="lateFighter"/>
-        <techname name="zeppelin"/>
-        <techname name="bunkers"/>
-        <techname name="heavyGun"/>            
-        <techname name="mine"/>
+      <!-- Tier 1 Techs (Category Leaders) -->
+      <techname name="economicReforms"/>
+      <techname name="science"/>
+      <techname name="defensiveTactics"/>
+      <techname name="fleetAction"/>
+      <techname name="offensiveTactics"/>
+      
+      <!-- Tier 2 Techs (require Tier 1) -->
+      <!-- Economic Reforms tier -->
+      <techname name="workingWomen"/>
+      <techname name="warBonds"/>
+      <techname name="industry"/>
+      
+      <!-- Science tier -->
+      <techname name="lateFighter"/>
+      <techname name="aircraftCarrier"/>
+      <techname name="zeppelin"/>
+      
+      <!-- Defensive Tactics tier -->
+      <techname name="bunkers"/>
+      <techname name="mine"/>
+      <techname name="heavyGun"/>
+      
+      <!-- Fleet Action tier -->
+      <techname name="convoys"/>
+      <techname name="subWarfare"/>
+      <techname name="dockyards"/>
+      
+      <!-- Offensive Tactics tier -->
+      <techname name="gas"/>
+      <techname name="creepingBarrage"/>
+      <techname name="armour"/>
     </technologies>
-    <playerTech player="Japanese">
-        <category name="Zeppelins">
-            <tech name="zeppelin"/>               
-        </category>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Chinese">
-        <category name="Conscripts">
-            <tech name="conscript"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Americans">
-        <category name="Mines">
-            <tech name="mine"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="British">
-        <category name="Mines">
-            <tech name="mine"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Germans">
-        <category name="Gas">
-            <tech name="gas"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-    </playerTech>
-	<playerTech player="French">
-        <category name="Heavy Guns">
-            <tech name="heavyGun"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Austrians">
-        <category name="Industry">
-            <tech name="industry"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Italians">
-        <category name="Late Fighters">
-            <tech name="lateFighter"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Heavy Guns"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Ottomans">
-        <category name="Mines">
-            <tech name="mine"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Russians">
-        <category name="Conscripts">
-            <tech name="conscript"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Dutch">
-        <category name="Industry">
-            <tech name="industry"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Late Fighters"/>
-		<category name="Heavy Guns"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
-	<playerTech player="Portuguese">
-        <category name="Heavy Guns">
-            <tech name="heavyGun"/>               
-        </category>
-		<category name="Zeppelins"/>
-		<category name="Aircraft Carriers"/>
-		<category name="Industry"/>
-		<category name="Late Fighters"/>
-		<category name="Mines"/>
-		<category name="Bunkers"/>
-		<category name="Tanks"/>
-		<category name="Conscripts"/>
-		<category name="Gas"/>
-    </playerTech>
+    
+    <!-- Shared tech tree for all countries -->
+    <category name="Economic Reforms" tier="1">
+      <tech name="economicReforms"/>
+    </category>
+    <category name="Working Women" tier="2" requires="economicReforms">
+      <tech name="workingWomen"/>
+    </category>
+    <category name="War Bonds" tier="2" requires="economicReforms">
+      <tech name="warBonds"/>
+    </category>
+    <category name="Industry" tier="2" requires="economicReforms">
+      <tech name="industry"/>
+    </category>
+    
+    <category name="Science" tier="1">
+      <tech name="science"/>
+    </category>
+    <category name="Late Fighter" tier="2" requires="science">
+      <tech name="lateFighter"/>
+    </category>
+    <category name="Aircraft Carrier" tier="2" requires="science">
+      <tech name="aircraftCarrier"/>
+    </category>
+    <category name="Zeppelins" tier="2" requires="science">
+      <tech name="zeppelin"/>
+    </category>
+    
+    <category name="Defensive Tactics" tier="1">
+      <tech name="defensiveTactics"/>
+    </category>
+    <category name="Bunkers" tier="2" requires="defensiveTactics">
+      <tech name="bunkers"/>
+    </category>
+    <category name="Mines" tier="2" requires="defensiveTactics">
+      <tech name="mine"/>
+    </category>
+    <category name="Heavy Guns" tier="2" requires="defensiveTactics">
+      <tech name="heavyGun"/>
+    </category>
+    
+    <category name="Fleet Action" tier="1">
+      <tech name="fleetAction"/>
+    </category>
+    <category name="Convoys" tier="2" requires="fleetAction">
+      <tech name="convoys"/>
+    </category>
+    <category name="Sub Warfare" tier="2" requires="fleetAction">
+      <tech name="subWarfare"/>
+    </category>
+    <category name="Dockyards" tier="2" requires="fleetAction">
+      <tech name="dockyards"/>
+    </category>
+    
+    <category name="Offensive Tactics" tier="1">
+      <tech name="offensiveTactics"/>
+    </category>
+    <category name="Gas" tier="2" requires="offensiveTactics">
+      <tech name="gas"/>
+    </category>
+    <category name="Creeping Barrage" tier="2" requires="offensiveTactics">
+      <tech name="creepingBarrage"/>
+    </category>
+    <category name="Armour" tier="2" requires="offensiveTactics">
+      <tech name="armour"/>
+    </category>
   </technology>
   
   <attachmentList>
@@ -3164,7 +3084,50 @@
       <option name="aARadar" value="false"/>
 	  <option name="techCost" value="5"/>
     </attachment>
-    <attachment name="unitAttachment" attachTo="infantry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+    
+    <!-- Tech Ability Attachments - define what each tech does -->
+    <attachment name="techAbilityAttachment" attachTo="science" javaClass="TechAbilityAttachment" type="technology">
+      <option name="techCostReduction" value="1"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="warBonds" javaClass="TechAbilityAttachment" type="technology">
+      <option name="warBondDiceSides" value="6"/>
+      <option name="warBondDiceNumber" value="2"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="industry" javaClass="TechAbilityAttachment" type="technology">
+      <option name="productionBonus" value="2:Factory"/>
+      <option name="minimumTerritoryValueForProductionBonus" value="2"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="subWarfare" javaClass="TechAbilityAttachment" type="technology">
+      <option name="attackBonus" value="1:submarine"/>
+      <option name="defenseBonus" value="1:submarine"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="convoys" javaClass="TechAbilityAttachment" type="technology">
+      <option name="defenseBonus" value="1:destroyer"/>
+      <option name="defenseBonus" value="1:cruiser"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="fleetAction" javaClass="TechAbilityAttachment" type="technology">
+      <option name="attackBonus" value="1:battlecruiser"/>
+      <option name="attackBonus" value="1:battleship"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="creepingBarrage" javaClass="TechAbilityAttachment" type="technology">
+      <option name="attackBonus" value="1:field_gun"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="bunkers" javaClass="TechAbilityAttachment" type="technology">
+      <option name="defenseBonus" value="1:trench"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="heavyGun" javaClass="TechAbilityAttachment" type="technology">
+      <option name="defenseBonus" value="1:heavy_gun"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="mine" javaClass="TechAbilityAttachment" type="technology">
+      <option name="attackBonus" value="1:landmine"/>
+      <option name="defenseBonus" value="1:seamine"/>
+    </attachment>
+    <attachment name="techAbilityAttachment" attachTo="gas" javaClass="TechAbilityAttachment" type="technology">
+      <option name="attackBonus" value="1:gas"/>
+    </attachment>
+    
+    <!-- Unit Attachments follow below -->
+
       <option name="movement" value="1"/>
       <option name="transportCost" value="2"/>
       <option name="attack" value="1"/>
@@ -6404,7 +6367,200 @@
         <option name="defenseBonus" value="1:trench"/>
     </attachment>
 
+
+    <!-- Condition and Trigger Attachments for tech-enabled unit variants -->
+    <!-- workingWomen enables female unit variants -->
+    <attachment name="conditionAttachmentWomenJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenBritish" attachTo="British" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenFrench" attachTo="French" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentWomenPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+    
+    <!-- lateFighter enables late fighter production -->
+    <attachment name="conditionAttachmentLateFighterJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterBritish" attachTo="British" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterFrench" attachTo="French" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentLateFighterPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+    
+    <!-- aircraftCarrier enables carrier production -->
+    <attachment name="conditionAttachmentAircraftCarrierJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierBritish" attachTo="British" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierFrench" attachTo="French" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentAircraftCarrierPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+    
+    <!-- armour enables tank production -->
+    <attachment name="conditionAttachmentArmourJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourBritish" attachTo="British" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourFrench" attachTo="French" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentArmourPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="armour" count="1"/>
+    </attachment>
+    
+    <!-- dockyards enables dockyards variant naval units -->
+    <attachment name="conditionAttachmentDockyardsJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyadsChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyardsAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyadsBritish" attachTo="British" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyardsGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyadsFrench" attachTo="French" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyardsAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyardsItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyardsOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyardsRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyadsDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+    <attachment name="conditionAttachmentDockyardsPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+      <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
 <!--  National Objectives -->
+
 
  <!-- Japanese Objectives -->
 
