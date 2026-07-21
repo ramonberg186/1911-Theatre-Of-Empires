@@ -3086,15 +3086,12 @@
     </attachment>
     
     <!-- Tech Ability Attachments - define what each tech does -->
-    <attachment name="techAbilityAttachment" attachTo="science" javaClass="TechAbilityAttachment" type="technology">
-      <option name="techCostReduction" value="1"/>
-    </attachment>
     <attachment name="techAbilityAttachment" attachTo="warBonds" javaClass="TechAbilityAttachment" type="technology">
       <option name="warBondDiceSides" value="6"/>
       <option name="warBondDiceNumber" value="2"/>
     </attachment>
     <attachment name="techAbilityAttachment" attachTo="industry" javaClass="TechAbilityAttachment" type="technology">
-      <option name="productionBonus" value="2:Factory"/>
+      <option name="productionBonus" value="2:factory"/>
       <option name="minimumTerritoryValueForProductionBonus" value="2"/>
     </attachment>
     <attachment name="techAbilityAttachment" attachTo="subWarfare" javaClass="TechAbilityAttachment" type="technology">
@@ -3110,7 +3107,7 @@
       <option name="attackBonus" value="1:battleship"/>
     </attachment>
     <attachment name="techAbilityAttachment" attachTo="creepingBarrage" javaClass="TechAbilityAttachment" type="technology">
-      <option name="attackBonus" value="1:field_gun"/>
+      <option name="attackBonus" value="1:artillery"/>
     </attachment>
     <attachment name="techAbilityAttachment" attachTo="bunkers" javaClass="TechAbilityAttachment" type="technology">
       <option name="defenseBonus" value="1:trench"/>
