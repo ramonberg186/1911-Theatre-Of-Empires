@@ -1,0 +1,14 @@
+<playerTech player="Americans">
+    <category name="Mines">
+       <tech name="mine"/>
+    </category>
+	<category name="Zeppelins"/>
+	<category name="Aircraft Carriers"/>
+	<category name="Industry"/>
+	<category name="Late Fighters"/>
+	<category name="Heavy Guns"/>
+	<category name="Bunkers"/>
+	<category name="Tanks"/>
+	<category name="Conscripts"/>
+	<category name="Gas"/>
+</playerTech>
