@@ -1,12 +1,12 @@
-<playerTech player="Americans">
-    <category name="Mines">
-       <tech name="mine"/>
+<playerTech player="Japanese">
+    <category name="Zeppelins">
+        <tech name="zeppelin"/>
     </category>
-	<category name="Zeppelins"/>
 	<category name="Aircraft Carriers"/>
 	<category name="Industry"/>
 	<category name="Late Fighters"/>
 	<category name="Heavy Guns"/>
+	<category name="Mines"/>
 	<category name="Bunkers"/>
 	<category name="Tanks"/>
 	<category name="Conscripts"/>

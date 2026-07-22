@@ -3038,63 +3038,37 @@
         <category name="Economic Reforms" tier="1">
             <tech name="economicReforms"/>
         </category>
-        <category name="Working Women" tier="2" requires="economicReforms">
-            <tech name="workingWomen"/>
-        </category>
-        <category name="War Bonds" tier="2" requires="economicReforms">
-            <tech name="warBonds"/>
-        </category>
-        <category name="Industry" tier="2" requires="economicReforms">
-            <tech name="industry"/>
-        </category>
+        <category name="Working Women" tier="2" requires="economicReforms"/>
+        <category name="War Bonds" tier="2" requires="economicReforms"/>
+        <category name="Industry" tier="2" requires="economicReforms"/>
+
         <category name="Science" tier="1">
             <tech name="science"/>
         </category>
-        <category name="Late Fighter" tier="2" requires="science">
-            <tech name="lateFighter"/>
-        </category>
-        <category name="Aircraft Carrier" tier="2" requires="science">
-            <tech name="aircraftCarrier"/>
-        </category>
-        <category name="Zeppelins" tier="2" requires="science">
-            <tech name="zeppelin"/>
-        </category>
+        <category name="Late Fighter" tier="2" requires="science"/>
+        <category name="Aircraft Carrier" tier="2" requires="science"/>
+        <category name="Zeppelins" tier="2" requires="science"/>
+
         <category name="Defensive Tactics" tier="1">
             <tech name="defensiveTactics"/>
         </category>
-        <category name="Bunkers" tier="2" requires="defensiveTactics">
-            <tech name="bunkers"/>
-        </category>
-        <category name="Mines" tier="2" requires="defensiveTactics">
-            <tech name="mine"/>
-        </category>
-        <category name="Heavy Guns" tier="2" requires="defensiveTactics">
-            <tech name="heavyGun"/>
-        </category>
+        <category name="Bunkers" tier="2" requires="defensiveTactics"/>
+        <category name="Mines" tier="2" requires="defensiveTactics"/>
+        <category name="Heavy Guns" tier="2" requires="defensiveTactics"/>
+
         <category name="Fleet Action" tier="1">
             <tech name="fleetAction"/>
         </category>
-        <category name="Convoys" tier="2" requires="fleetAction">
-            <tech name="convoys"/>
-        </category>
-        <category name="Sub Warfare" tier="2" requires="fleetAction">
-            <tech name="subWarfare"/>
-        </category>
-        <category name="Dockyards" tier="2" requires="fleetAction">
-            <tech name="dockyards"/>
-        </category>
+        <category name="Convoys" tier="2" requires="fleetAction"/>
+        <category name="Sub Warfare" tier="2" requires="fleetAction"/>
+        <category name="Dockyards" tier="2" requires="fleetAction"/>
+
         <category name="Offensive Tactics" tier="1">
             <tech name="offensiveTactics"/>
         </category>
-        <category name="Gas" tier="2" requires="offensiveTactics">
-            <tech name="gas"/>
-        </category>
-        <category name="Creeping Barrage" tier="2" requires="offensiveTactics">
-            <tech name="creepingBarrage"/>
-        </category>
-        <category name="Armour" tier="2" requires="offensiveTactics">
-            <tech name="armour"/>
-        </category>
+        <category name="Gas" tier="2" requires="offensiveTactics"/>
+        <category name="Creeping Barrage" tier="2" requires="offensiveTactics"/>
+        <category name="Armour" tier="2" requires="offensiveTactics"/>
     </playerTech>
 
     <playerTech player="Chinese">
@@ -5959,9 +5933,10 @@
     <!-- Condition Attachments for tech-tree progression -->
     <!-- ECONOMIC REFORMS -->
 
-<attachment name="conditionAttachmentEconomicReformsJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="economicReforms" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmenteconomicReformsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="economicReforms" count="1"/>
+        <option name="directOwnershipTerritories" value="Tokyo" count="1"/>
+    </attachment>
 
 <attachment name="conditionAttachmentEconomicReformsChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
     <option name="techs" value="economicReforms" count="1"/>
@@ -6212,15 +6187,13 @@
 <!-- ===================================================== -->
 
 <!-- Economic Reforms -> Working Women, War Bonds, Industry -->
-<attachment name="triggerAttachmentEconomicReformsJapanese"
-    attachTo="Japanese"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentEconomicReformsJapanese"/>
+<attachment name="triggerAttachmenteconomicReformsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmenteconomicReformsJ"/>
+    <option name="placement" value="Tokyo:infantry" count="3"/>
     <option name="availableTech" value="Working Women:workingWomen"/>
     <option name="availableTech" value="War Bonds:warBonds"/>
     <option name="availableTech" value="Industry:industry"/>
-    <option name="uses" value="1"/>
+    <option name="uses" value="-1"/>
     <option name="when" value="after:japaneseTechActivation"/>
 </attachment>
 

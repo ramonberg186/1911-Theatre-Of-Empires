@@ -1,0 +1,3 @@
+<attachment name="conditionAttachmentZeppelinsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="zeppelin" count="1"/>
+</attachment>

@@ -1,0 +1,5 @@
+        <attachment name="triggerAttachmentGermanyP" attachTo="Germany" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentpropagandaG"/>
+            <option name="when" value="after:GermanyTechActivation"/>
+            <option name="placement" value="Berlin:stormtruppen" count="3"/>
+        </attachment>

@@ -1,0 +1,4 @@
+<attachment name="conditionAttachmenteconomicReformsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="economicReforms" count="1"/>
+    <option name="directOwnershipTerritories" value="Tokyo" count="1"/>
+</attachment>

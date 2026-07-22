@@ -1,0 +1,9 @@
+<attachment name="triggerAttachmenteconomicReformsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmenteconomicReformsJ"/>
+    <option name="placement" value="Tokyo:infantry" count="3"/>
+    <option name="availableTech" value="Working Women:workingWomen"/>
+    <option name="availableTech" value="War Bonds:warBonds"/>
+    <option name="availableTech" value="Industry:industry"/>
+    <option name="uses" value="-1"/>
+    <option name="when" value="after:japaneseTechActivation"/>
+</attachment>

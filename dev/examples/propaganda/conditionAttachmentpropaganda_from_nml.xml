@@ -1,0 +1,4 @@
+        <attachment name="conditionAttachmentpropagandaG" attachTo="Germany" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="propaganda" count="1"/>
+            <option name="directOwnershipTerritories" value="Berlin" count="1"/>
+        </attachment>

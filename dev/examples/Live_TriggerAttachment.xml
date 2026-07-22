@@ -1,0 +1,7 @@
+<attachment name="triggerAttachmentJZeppelins" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+    <option name="trigger" value="conditionAttachmentZeppelinsJ"/>
+	<option name="productionRule" value="JapaneseFrontier:buyzeppelin"/>
+	<option name="availableTech" value="Aircraft Carriers:aircraftCarrier"/>
+    <option name="uses" value="1"/>
+    <option name="when" value="after:japaneseTechActivation"/>
+</attachment>

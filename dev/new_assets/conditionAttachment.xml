@@ -1,0 +1,3 @@
+<attachment name="conditionAttachmentEconomicReformsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+    <option name="techs" value="economicReforms" count="1"/>
+</attachment>
