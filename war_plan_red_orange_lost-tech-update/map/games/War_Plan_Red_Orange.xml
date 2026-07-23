@@ -6170,6 +6170,140 @@
         <option name="when" value="after:portugueseTechActivation"/>
     </attachment>
 
+<!-- Aircraft Carriers -->
+
+    <attachment name="conditionAttachmentaircraftCarrierJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierJ"/>
+        <option name="productionRule" value="productionJapanese:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierC"/>
+        <option name="productionRule" value="productionChinese:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierAm"/>
+        <option name="productionRule" value="productionAmericans:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierB"/>
+        <option name="productionRule" value="productionBritish:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierG"/>
+        <option name="productionRule" value="productionGermans:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierF"/>
+        <option name="productionRule" value="productionFrench:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierAu"/>
+        <option name="productionRule" value="productionAustrians:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierI"/>
+        <option name="productionRule" value="productionItalians:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierO"/>
+        <option name="productionRule" value="productionOttomans:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierR"/>
+        <option name="productionRule" value="productionRussians:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierD"/>
+        <option name="productionRule" value="productionDutch:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentaircraftCarrierP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierP"/>
+        <option name="productionRule" value="productionPortuguese:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
 <!-- DEFENSIVE TACTICS -->
 
 <attachment name="conditionAttachmentDefensiveTacticsJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
