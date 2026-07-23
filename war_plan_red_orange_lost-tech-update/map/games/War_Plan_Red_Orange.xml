@@ -2648,7 +2648,8 @@
       <step name="endRoundStep" delegate="endRound"/>
     </sequence>
   </gamePlay>
-  <production>
+
+<production>
     <!-- Unit Production Cost -->
     <productionRule name="buyinfantry">
       <cost resource="PUs" quantity="3"/>
@@ -2738,7 +2739,8 @@
       <cost resource="PUs" quantity="4"/>
       <result resourceOrUnit="seamine" quantity="1"/>
     </productionRule>
-    <productionFrontier name="ChineseFrontier">
+
+    <productionFrontier name="productionChinese">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2753,7 +2755,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="GermansFrontier">
+    <productionFrontier name="productionGermans">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2768,7 +2770,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="AustriansFrontier">
+    <productionFrontier name="productionAustrians">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2783,7 +2785,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="OttomansFrontier">
+    <productionFrontier name="productionOttomans">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2798,7 +2800,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="ItaliansFrontier">
+    <productionFrontier name="productionItalians">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2813,7 +2815,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="FrenchFrontier">
+    <productionFrontier name="productionFrench">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2828,7 +2830,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="RussiansFrontier">
+    <productionFrontier name="productionRussians">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2843,7 +2845,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="BritishFrontier">
+    <productionFrontier name="productionBritish">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2858,7 +2860,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="AmericansFrontier">
+    <productionFrontier name="productionAmericans">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2873,7 +2875,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <productionFrontier name="JapaneseFrontier">
+    <productionFrontier name="productionJapanese">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2888,7 +2890,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-	<productionFrontier name="PortugueseFrontier">
+	<productionFrontier name="productionPortuguese">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2903,7 +2905,7 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-	<productionFrontier name="DutchFrontier">
+	<productionFrontier name="productionDutch">
       <frontierRules name="buyinfantry"/>
 	  <frontierRules name="buyartillery"/>
       <frontierRules name="buycavalry"/>
@@ -2918,19 +2920,20 @@
 	  <frontierRules name="buybattleship"/>
 	  <frontierRules name="buyfactory"/>
     </productionFrontier>
-    <playerProduction player="Chinese" frontier="ChineseFrontier"/>
-    <playerProduction player="Germans" frontier="GermansFrontier"/>
-    <playerProduction player="Austrians" frontier="AustriansFrontier"/>
-    <playerProduction player="Ottomans" frontier="OttomansFrontier"/>
-    <playerProduction player="Italians" frontier="ItaliansFrontier"/>
-    <playerProduction player="French" frontier="FrenchFrontier"/>
-    <playerProduction player="Russians" frontier="RussiansFrontier"/>
-    <playerProduction player="British" frontier="BritishFrontier"/>
-    <playerProduction player="Americans" frontier="AmericansFrontier"/>
-    <playerProduction player="Japanese" frontier="JapaneseFrontier"/>
-	<playerProduction player="Dutch" frontier="DutchFrontier"/>
-	<playerProduction player="Portuguese" frontier="PortugueseFrontier"/>
-  </production>
+
+    <playerProduction player="Chinese" frontier="productionChinese"/>
+    <playerProduction player="Germans" frontier="productionGermans"/>
+    <playerProduction player="Austrians" frontier="productionAustrians"/>
+    <playerProduction player="Ottomans" frontier="productionOttomans"/>
+    <playerProduction player="Italians" frontier="productionItalians"/>
+    <playerProduction player="French" frontier="productionFrench"/>
+    <playerProduction player="Russians" frontier="productionRussians"/>
+    <playerProduction player="British" frontier="productionBritish"/>
+    <playerProduction player="Americans" frontier="productionAmericans"/>
+    <playerProduction player="Japanese" frontier="productionJapanese"/>
+	<playerProduction player="Dutch" frontier="productionDutch"/>
+	<playerProduction player="Portuguese" frontier="productionPortuguese"/>
+</production>
 
 <technology>
     <technologies>
@@ -3628,6 +3631,7 @@
       <option name="artillerySupportable" value="true"/>
     </attachment>
 	<attachment name="unitAttachment" attachTo="late_fighter" javaClass="UnitAttachment" type="unitType">
+      <option name="artillery" value="true"/>
       <option name="isAir" value="true"/>
       <option name="attack" value="3"/>
       <option name="defense" value="4"/>
@@ -5896,6 +5900,19 @@
         <option name="availableTech" value="Zeppelins:zeppelin"/>
         <option name="uses" value="-1"/>
         <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
+<!-- Late Fighter -->
+
+    <attachment name="conditionAttachmentlateFighterJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterJ"/>
+        <option name="productionRule" value="productionJapanese:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
     </attachment>
 
 <!-- DEFENSIVE TACTICS -->

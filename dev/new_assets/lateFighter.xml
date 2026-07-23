@@ -1,0 +1,24 @@
+        <attachment name="conditionAttachmentlateFighterJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="lateFighter" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentlateFighterJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentlateFighterJ"/>
+            <option name="productionRule" value="productionJapanese:buylate_fighter"/>
+            <option name="uses" value="1"/>
+            <option name="when" value="after:japaneseTechActivation"/>
+        </attachment>
+
+        <productionRule name="buylate_fighter">
+            <cost resource="PUs" quantity="10"/>
+            <result resourceOrUnit="late_fighter" quantity="1"/>
+        </productionRule>
+
+        <attachment name="unitAttachment" attachTo="late_fighter" javaClass="UnitAttachment" type="unitType">
+            <option name="artillery" value="true"/>
+            <option name="isAir" value="true"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="4"/>
+            <option name="movement" value="4"/>
+            <option name="carrierCost" value="1"/>
+        </attachment>
