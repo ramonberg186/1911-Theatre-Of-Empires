@@ -1,0 +1,10 @@
+        <attachment name="conditionAttachmentFighterG" attachTo="Germany" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="lateFighter" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentGermanyT3" attachTo="Germany" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentFighterG"/>
+            <option name="productionRule" value="productionGermany:buylate_fighter"/>
+            <option name="uses" value="1"/>
+            <option name="when" value="after:GermanyTechActivation"/>
+        </attachment>
