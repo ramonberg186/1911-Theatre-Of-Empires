@@ -1,0 +1,23 @@
+        <attachment name="conditionAttachmentzeppelinsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="zeppelins" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentzeppelinsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentzeppelinsJ"/>
+            <option name="productionRule" value="productionJapanese:buyzeppelin"/>
+            <option name="uses" value="1"/>
+            <option name="when" value="after:japaneseTechActivation"/>
+        </attachment>
+
+        <productionRule name="buyzeppelin">
+            <cost resource="PUs" quantity="12"/>
+            <result resourceOrUnit="zeppelin" quantity="1"/>
+        </productionRule>
+
+        <attachment name="unitAttachment" attachTo="zeppelin" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="movement" value="6"/>
+            <option name="isAir" value="true"/>
+            <option name="attack" value="2"/>
+            <option name="defense" value="1"/>
+            <option name="isStrategicBomber" value="true"/>
+        </attachment>

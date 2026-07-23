@@ -2668,7 +2668,7 @@
       <result resourceOrUnit="gas" quantity="1"/>
     </productionRule>
     <productionRule name="buyzeppelin">
-      <cost resource="PUs" quantity="14"/>
+      <cost resource="PUs" quantity="12"/>
       <result resourceOrUnit="zeppelin" quantity="1"/>
     </productionRule>
     <productionRule name="buyfighter">
@@ -5915,6 +5915,261 @@
         <option name="when" value="after:japaneseTechActivation"/>
     </attachment>
 
+    <attachment name="conditionAttachmentlateFighterC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterC"/>
+        <option name="productionRule" value="productionChinese:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterAm"/>
+        <option name="productionRule" value="productionAmericans:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterB"/>
+        <option name="productionRule" value="productionBritish:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterG"/>
+        <option name="productionRule" value="productionGermans:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterF"/>
+        <option name="productionRule" value="productionFrench:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterAu"/>
+        <option name="productionRule" value="productionAustrians:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterI"/>
+        <option name="productionRule" value="productionItalians:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterO"/>
+        <option name="productionRule" value="productionOttomans:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterR"/>
+        <option name="productionRule" value="productionRussians:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterD"/>
+        <option name="productionRule" value="productionDutch:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentlateFighterP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="lateFighter" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentlateFighterP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentlateFighterP"/>
+        <option name="productionRule" value="productionPortuguese:buylate_fighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
+<!-- Zeppelins -->
+
+    <attachment name="conditionAttachmentzeppelinsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsJ"/>
+        <option name="productionRule" value="productionJapanese:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsC"/>
+        <option name="productionRule" value="productionChinese:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsAm"/>
+        <option name="productionRule" value="productionAmericans:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsB"/>
+        <option name="productionRule" value="productionBritish:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsG"/>
+        <option name="productionRule" value="productionGermans:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsF"/>
+        <option name="productionRule" value="productionFrench:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsAu"/>
+        <option name="productionRule" value="productionAustrians:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsI"/>
+        <option name="productionRule" value="productionItalians:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsO"/>
+        <option name="productionRule" value="productionOttomans:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsR"/>
+        <option name="productionRule" value="productionRussians:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsD"/>
+        <option name="productionRule" value="productionDutch:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentzeppelinsP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="zeppelins" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentzeppelinsP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentzeppelinsP"/>
+        <option name="productionRule" value="productionPortuguese:buyzeppelin"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
 <!-- DEFENSIVE TACTICS -->
 
 <attachment name="conditionAttachmentDefensiveTacticsJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
@@ -6139,44 +6394,6 @@
 <attachment name="conditionAttachmentWomenPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
     <option name="techs" value="workingWomen" count="1"/>
 </attachment>
-
-    <!-- lateFighter enables late fighter production -->
-    <attachment name="conditionAttachmentLateFighterJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentLateFighterPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="lateFighter" count="1"/>
-    </attachment>
 
     <!-- aircraftCarrier enables carrier production -->
     <attachment name="conditionAttachmentAircraftCarrierJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
