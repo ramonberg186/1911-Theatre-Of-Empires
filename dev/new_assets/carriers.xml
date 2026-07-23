@@ -1,0 +1,10 @@
+    <attachment name="conditionAttachmentaircraftCarrierJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="aircraftCarrier" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentaircraftCarrierJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentaircraftCarrierJ"/>
+        <option name="productionRule" value="productionJapanese:buycarrier"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>

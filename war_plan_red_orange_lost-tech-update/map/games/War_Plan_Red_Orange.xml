@@ -6306,53 +6306,173 @@
 
 <!-- DEFENSIVE TACTICS -->
 
-<attachment name="conditionAttachmentDefensiveTacticsJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentDefensiveTacticsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentDefensiveTacticsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsJ"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionJapanese:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentDefensiveTacticsC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentDefensiveTacticsC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsC"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionChinese:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentDefensiveTacticsAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentDefensiveTacticsAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsAm"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionAmericans:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentDefensiveTacticsB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentDefensiveTacticsB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsB"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionBritish:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentDefensiveTacticsG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentDefensiveTacticsG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsG"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionGermans:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentDefensiveTacticsF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentDefensiveTacticsPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="defensiveTactics" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentDefensiveTacticsF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsF"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionFrench:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentDefensiveTacticsAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentDefensiveTacticsAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsAu"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionAustrians:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentDefensiveTacticsI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentDefensiveTacticsI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsI"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionItalians:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentDefensiveTacticsO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentDefensiveTacticsO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsO"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionOttomans:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentDefensiveTacticsR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentDefensiveTacticsR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsR"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionRussians:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentDefensiveTacticsD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentDefensiveTacticsD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsD"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionDutch:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentDefensiveTacticsP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentDefensiveTacticsP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsP"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionPortuguese:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
 
 <!-- FLEET ACTION -->
 

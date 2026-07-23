@@ -1,0 +1,13 @@
+    <attachment name="conditionAttachmentDefensiveTacticsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="defensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentDefensiveTacticsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentDefensiveTacticsJ"/>
+        <option name="availableTech" value="Bunkers:bunkers"/>
+        <option name="availableTech" value="Mines:mine"/>
+        <option name="availableTech" value="Heavy Guns:heavyGun"/>
+        <option name="productionRule" value="productionJapanese:buyconscript"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
