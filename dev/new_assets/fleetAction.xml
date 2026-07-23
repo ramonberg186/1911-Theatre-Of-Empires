@@ -1,0 +1,17 @@
+    <attachment name="conditionAttachmentfleetActionJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentfleetActionJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionJ"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="techAbilityAttachment" attachTo="fleetaction" javaClass="TechAbilityAttachment" type="technology">
+        <option name="attackBonus" value="1:battlecruiser"/>
+        <option name="attackBonus" value="1:battleship"/>
+    </attachment>

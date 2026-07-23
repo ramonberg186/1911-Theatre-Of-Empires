@@ -6476,53 +6476,150 @@
 
 <!-- FLEET ACTION -->
 
-<attachment name="conditionAttachmentFleetActionJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentfleetActionJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionJ"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionC"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionAm"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionB"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionG"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionF"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionAu"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionI"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionO"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionR"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentFleetActionPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="fleetAction" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentfleetActionD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionD"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentfleetActionP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="fleetAction" count="1"/>
+    </attachment>
+    <attachment name="triggerAttachmentfleetActionP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentfleetActionP"/>
+        <option name="availableTech" value="Convoys:convoys"/>
+        <option name="availableTech" value="Sub Warfare:subWarfare"/>
+        <option name="availableTech" value="Dockyards:dockyards"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
 
 <!-- OFFENSIVE TACTICS -->
 
@@ -6590,8 +6687,7 @@
 <!-- Fleet Action -> Convoys, Sub Warfare, Dockyards -->
 <attachment name="triggerAttachmentFleetActionJapanese"
     attachTo="Japanese"
-    javaClass="TriggerAttachment"
-    type="player">
+    javaClass="TriggerAttachment" type="player">
     <option name="trigger" value="conditionAttachmentFleetActionJapanese"/>
     <option name="availableTech" value="Convoys:convoys"/>
     <option name="availableTech" value="Sub Warfare:subWarfare"/>
