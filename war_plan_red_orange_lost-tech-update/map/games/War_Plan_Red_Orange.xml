@@ -6039,7 +6039,7 @@
 <!-- Zeppelins -->
 
     <attachment name="conditionAttachmentzeppelinsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
@@ -6050,7 +6050,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
@@ -6061,7 +6061,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
@@ -6072,7 +6072,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsB" attachTo="British" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsB" attachTo="British" javaClass="TriggerAttachment" type="player">
@@ -6083,7 +6083,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsG" attachTo="Germans" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
@@ -6094,7 +6094,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsF" attachTo="French" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsF" attachTo="French" javaClass="TriggerAttachment" type="player">
@@ -6105,7 +6105,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
@@ -6116,7 +6116,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsI" attachTo="Italians" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
@@ -6127,7 +6127,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
@@ -6138,7 +6138,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsR" attachTo="Russians" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
@@ -6149,7 +6149,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
@@ -6160,7 +6160,7 @@
     </attachment>
 
     <attachment name="conditionAttachmentzeppelinsP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-        <option name="techs" value="zeppelins" count="1"/>
+        <option name="techs" value="zeppelin" count="1"/>
     </attachment>
 
     <attachment name="triggerAttachmentzeppelinsP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">

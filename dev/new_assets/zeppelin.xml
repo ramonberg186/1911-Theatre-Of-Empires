@@ -1,5 +1,5 @@
         <attachment name="conditionAttachmentzeppelinsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-            <option name="techs" value="zeppelins" count="1"/>
+            <option name="techs" value="zeppelin" count="1"/>
         </attachment>
 
         <attachment name="triggerAttachmentzeppelinsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
