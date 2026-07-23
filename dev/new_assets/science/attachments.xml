@@ -1,0 +1,14 @@
+        <attachment name="conditionAttachmentscienceJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="science" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentscienceJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentscienceJ"/>
+            <option name="resource" value="techTokens"/>
+            <option name="resourceCount" value="1"/>
+            <option name="availableTech" value="Late Fighter:lateFighter"/>
+            <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+            <option name="availableTech" value="Zeppelins:zeppelin"/>
+            <option name="uses" value="-1"/>
+            <option name="when" value="after:japaneseTechActivation"/>
+        </attachment>

@@ -5719,53 +5719,184 @@
 
 <!-- SCIENCE -->
 
-<attachment name="conditionAttachmentScienceJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentscienceJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentscienceJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceJ"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+    <attachment name="conditionAttachmentscienceC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentscienceC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceC"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentscienceA" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentscienceA" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceA"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:americanTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentscienceB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentscienceB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceB"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentscienceG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentscienceG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceG"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:germanTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentscienceF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
 
-<attachment name="conditionAttachmentScienceDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="triggerAttachmentscienceF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceF"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
 
-<attachment name="conditionAttachmentSciencePortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
+    <attachment name="conditionAttachmentscienceAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentscienceAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceAu"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:austrianTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentscienceI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentscienceI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceI"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:italianTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentscienceO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentscienceO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceO"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:ottomanTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentscienceR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentscienceR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceR"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:russianTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentscienceD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentscienceD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceD"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentscienceP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="science" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentscienceP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachmentscienceP"/>
+        <option name="resource" value="techTokens"/>
+        <option name="resourceCount" value="1"/>
+        <option name="availableTech" value="Late Fighter:lateFighter"/>
+        <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
+        <option name="availableTech" value="Zeppelins:zeppelin"/>
+        <option name="uses" value="-1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
 
 <!-- DEFENSIVE TACTICS -->
 
@@ -5915,16 +6046,6 @@
 
 <attachment name="conditionAttachmentOffensiveTacticsPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
     <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<!-- Science -> Late Fighter, Aircraft Carrier, Zeppelin -->
-<attachment name="triggerAttachmentScienceUnlockJapanese" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
-    <option name="trigger" value="conditionAttachmentScienceJapanese"/>
-    <option name="availableTech" value="Late Fighter:lateFighter"/>
-    <option name="availableTech" value="Aircraft Carrier:aircraftCarrier"/>
-    <option name="availableTech" value="Zeppelins:zeppelin"/>
-    <option name="uses" value="1"/>
-    <option name="when" value="after:japaneseTechActivation"/>
 </attachment>
 
 <!-- Defensive Tactics -> Bunkers, Mine, Heavy Gun -->
@@ -6153,235 +6274,6 @@
     <attachment name="conditionAttachmentDockyardsPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
       <option name="techs" value="dockyards" count="1"/>
     </attachment>
-
-    <!-- Science: Gain 1 free tech token each turn -->
-
-    <!-- Japanese -->
-<attachment name="conditionAttachmentScienceJ"
-    attachTo="Japanese"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceJ"
-    attachTo="Japanese"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceJ"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:japaneseTechActivation"/>
-</attachment>
-<!-- Chinese -->
-<attachment name="conditionAttachmentScienceC"
-    attachTo="Chinese"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceC"
-    attachTo="Chinese"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceC"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:chineseTechActivation"/>
-</attachment>
-
-<!-- Americans -->
-<attachment name="conditionAttachmentScienceA"
-    attachTo="Americans"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceA"
-    attachTo="Americans"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceA"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:americanTechActivation"/>
-</attachment>
-
-<!-- British -->
-<attachment name="conditionAttachmentScienceB"
-    attachTo="British"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceB"
-    attachTo="British"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceB"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:britishTechActivation"/>
-</attachment>
-
-<!-- Germans -->
-<attachment name="conditionAttachmentScienceG"
-    attachTo="Germans"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceG"
-    attachTo="Germans"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceG"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:germanTechActivation"/>
-</attachment>
-
-<!-- French -->
-<attachment name="conditionAttachmentScienceF"
-    attachTo="French"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceF"
-    attachTo="French"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceF"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:frenchTechActivation"/>
-</attachment>
-
-<!-- Austrians -->
-<attachment name="conditionAttachmentScienceAU"
-    attachTo="Austrians"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceAU"
-    attachTo="Austrians"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceAU"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:austrianTechActivation"/>
-</attachment>
-
-<!-- Italians -->
-<attachment name="conditionAttachmentScienceI"
-    attachTo="Italians"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceI"
-    attachTo="Italians"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceI"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:italianTechActivation"/>
-</attachment>
-
-<!-- Ottomans -->
-<attachment name="conditionAttachmentScienceO"
-    attachTo="Ottomans"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceO"
-    attachTo="Ottomans"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceO"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:ottomanTechActivation"/>
-</attachment>
-
-<!-- Russians -->
-<attachment name="conditionAttachmentScienceR"
-    attachTo="Russians"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceR"
-    attachTo="Russians"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceR"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:russianTechActivation"/>
-</attachment>
-
-<!-- Dutch -->
-<attachment name="conditionAttachmentScienceD"
-    attachTo="Dutch"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceD"
-    attachTo="Dutch"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceD"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:dutchTechActivation"/>
-</attachment>
-
-<!-- Portuguese -->
-<attachment name="conditionAttachmentScienceP"
-    attachTo="Portuguese"
-    javaClass="RulesAttachment"
-    type="player">
-    <option name="techs" value="science" count="1"/>
-</attachment>
-
-<attachment name="triggerAttachmentScienceP"
-    attachTo="Portuguese"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentScienceP"/>
-    <option name="resource" value="techTokens"/>
-    <option name="resourceCount" value="1"/>
-    <option name="uses" value="-1"/>
-    <option name="when" value="after:portugueseTechActivation"/>
-</attachment>
 
 <!--  National Objectives -->
 

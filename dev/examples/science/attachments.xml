@@ -1,0 +1,10 @@
+        <attachment name="conditionAttachmentscienceG" attachTo="Germany" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="science" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentGermanyS" attachTo="Germany" javaClass="TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentscienceG"/>
+            <option name="resource" value="techTokens"/>
+            <option name="resourceCount" value="1"/>
+            <option name="when" value="after:GermanyTechActivation"/>
+        </attachment>
