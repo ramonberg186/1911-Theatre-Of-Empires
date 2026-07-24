@@ -1,0 +1,16 @@
+    <attachment name="conditionAttachmentoffensiveTacticsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentoffensiveTacticsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsJ"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="techAbilityAttachment" attachTo="offensiveTactics" javaClass="TechAbilityAttachment" type="technology">
+        <option name="movementBonus" value="1:cavalry"/>
+    </attachment>

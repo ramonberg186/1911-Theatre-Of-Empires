@@ -6623,164 +6623,159 @@
 
 <!-- OFFENSIVE TACTICS -->
 
-<attachment name="conditionAttachmentOffensiveTacticsJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<attachment name="conditionAttachmentOffensiveTacticsPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="offensiveTactics" count="1"/>
-</attachment>
-
-<!-- Defensive Tactics -> Bunkers, Mine, Heavy Gun -->
-<attachment name="triggerAttachmentDefensiveTacticsJapanese"
-    attachTo="Japanese"
-    javaClass="TriggerAttachment"
-    type="player">
-    <option name="trigger" value="conditionAttachmentDefensiveTacticsJapanese"/>
-    <option name="availableTech" value="Bunkers:bunkers"/>
-    <option name="availableTech" value="Mines:mine"/>
-    <option name="availableTech" value="Heavy Guns:heavyGun"/>
-    <option name="uses" value="1"/>
-    <option name="when" value="after:japaneseTechActivation"/>
-</attachment>
-
-<!-- Fleet Action -> Convoys, Sub Warfare, Dockyards -->
-<attachment name="triggerAttachmentFleetActionJapanese"
-    attachTo="Japanese"
-    javaClass="TriggerAttachment" type="player">
-    <option name="trigger" value="conditionAttachmentFleetActionJapanese"/>
-    <option name="availableTech" value="Convoys:convoys"/>
-    <option name="availableTech" value="Sub Warfare:subWarfare"/>
-    <option name="availableTech" value="Dockyards:dockyards"/>
-    <option name="uses" value="1"/>
-    <option name="when" value="after:japaneseTechActivation"/>
-</attachment>
-
-<!-- Offensive Tactics -> Gas, Creeping Barrage, Armour -->
-<attachment name="triggerAttachmentOffensiveTacticsJapanese" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
-    <option name="trigger" value="conditionAttachmentOffensiveTacticsJapanese"/>
-    <option name="availableTech" value="Gas:gas"/>
-    <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
-    <option name="availableTech" value="Armour:armour"/>
-    <option name="uses" value="1"/>
-    <option name="when" value="after:japaneseTechActivation"/>
-</attachment>
-
-<!-- Condition and Trigger Attachments for tech-enabled unit variants -->
-<!-- workingWomen enables female unit variants -->
-<attachment name="conditionAttachmentWomenJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-<attachment name="conditionAttachmentWomenPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-    <option name="techs" value="workingWomen" count="1"/>
-</attachment>
-
-    <!-- aircraftCarrier enables carrier production -->
-    <attachment name="conditionAttachmentAircraftCarrierJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+    <attachment name="conditionAttachmentoffensiveTacticsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="triggerAttachmentoffensiveTacticsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsJ"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+    <attachment name="conditionAttachmentoffensiveTacticsC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="triggerAttachmentoffensiveTacticsC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsC"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="conditionAttachmentoffensiveTacticsAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="triggerAttachmentoffensiveTacticsAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsAm"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="conditionAttachmentoffensiveTacticsB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="triggerAttachmentoffensiveTacticsB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsB"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="conditionAttachmentoffensiveTacticsG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="triggerAttachmentoffensiveTacticsG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsG"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="conditionAttachmentoffensiveTacticsF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentAircraftCarrierPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="aircraftCarrier" count="1"/>
+
+    <attachment name="triggerAttachmentoffensiveTacticsF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsF"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentoffensiveTacticsAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentoffensiveTacticsAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsAu"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentoffensiveTacticsI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentoffensiveTacticsI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsI"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentoffensiveTacticsO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentoffensiveTacticsO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsO"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentoffensiveTacticsR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentoffensiveTacticsR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsR"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentoffensiveTacticsD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentoffensiveTacticsD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsD"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentoffensiveTacticsP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="offensiveTactics" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentoffensiveTacticsP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentoffensiveTacticsP"/>
+        <option name="availableTech" value="Armour:armour"/>
+        <option name="availableTech" value="Creeping Barrage:creepingBarrage"/>
+        <option name="availableTech" value="Gas:gas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
     </attachment>
 
     <!-- armour enables tank production -->
