@@ -1,0 +1,27 @@
+    <attachment name="unitAttachment" attachTo="catapult" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+      <option name="transportCost" value="1" />
+      <option name="movement" value="2" />
+      <option name="targetsAA" value="war_wagon:fortress:wall" />
+      <option name="typeAA" value="siege" />
+      <option name="attackAA" value="0" />
+      <option name="offensiveAttackAA" value="6" />
+      <option name="isAAforCombatOnly" value="true" />
+      <option name="mayOverStackAA" value="true" />
+      <option name="damageableAA" value="false" />
+      <option name="maxAAattacks" value="2" />
+      <option name="maxRoundsAA" value="1" />
+    </attachment>
+
+    <attachment name="unitAttachment" attachTo="tank" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+      <option name="movement" value="2"/>
+      <option name="transportCost" value="3"/>
+      <option name="canBlitz" value="true"/>
+      <option name="attack" value="4"/>
+      <option name="defense" value="2"/>
+      <option name="targetsAA" value="trench" />
+      <option name="offensiveAttackAA" value="3" />
+      <option name="isAAforCombatOnly" value="true" />
+      <option name="mayOverStackAA" value="true" />
+      <option name="maxAAattacks" value="2" />
+      <option name="maxRoundsAA" value="1" />
+    </attachment>

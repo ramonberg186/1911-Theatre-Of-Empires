@@ -1,0 +1,30 @@
+        <productionRule name="buyartillery_w">
+            <cost resource="PUs" quantity="7"/>
+            <result resourceOrUnit="artillery" quantity="2"/>
+        </productionRule>
+
+        <productionRule name="buyheavy_gun_w">
+            <cost resource="PUs" quantity="9"/>
+            <result resourceOrUnit="heavy_gun" quantity="2"/>
+        </productionRule>
+
+        <productionRule name="buyfighter_w">
+            <cost resource="PUs" quantity="7"/>
+            <result resourceOrUnit="fighter" quantity="1"/>
+        </productionRule>
+
+        <attachment name="conditionAttachmentworkingWomenJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="workingWomen" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentworkingWomenJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentworkingWomenJ"/>
+            <option name="productionRule" value="productionJapanese:buyartillery_w"/>
+            <option name="productionRule" value="productionJapanese:buyheavy_gun_w"/>
+            <option name="productionRule" value="productionJapanese:buyfighter_w"/>
+            <option name="productionRule" value="productionJapanese:-buyartillery"/>
+            <option name="productionRule" value="productionJapanese:-buyheavy_gun"/>
+            <option name="productionRule" value="productionJapanese:-buyfighter"/>
+            <option name="uses" value="1"/>
+            <option name="when" value="after:japaneseTechActivation"/>
+        </attachment>

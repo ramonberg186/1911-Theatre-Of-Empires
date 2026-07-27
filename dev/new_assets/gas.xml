@@ -1,0 +1,10 @@
+        <attachment name="conditionAttachmentgasJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="gas" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentgasJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentgasJ"/>
+            <option name="productionRule" value="productionJapanese:buygas"/>
+            <option name="uses" value="1"/>
+            <option name="when" value="after:japaneseTechActivation"/>
+        </attachment>

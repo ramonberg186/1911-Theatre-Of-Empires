@@ -1,0 +1,10 @@
+    <attachment name="conditionAttachmentarmourJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourJ"/>
+        <option name="productionRule" value="productionJapanese:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>

@@ -1,0 +1,11 @@
+        <attachment name="conditionAttachmentmineJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="mine" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentmineJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentmineJ"/>
+            <option name="productionRule" value="productionJapanese:buylandmine"/>
+            <option name="productionRule" value="productionJapanese:buyseamine"/>
+            <option name="uses" value="1"/>
+            <option name="when" value="after:japaneseTechActivation"/>
+        </attachment>

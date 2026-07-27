@@ -1,0 +1,10 @@
+        <attachment name="conditionAttachmentheavyGunJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+            <option name="techs" value="heavyGun" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentheavyGunJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentheavyGunJ"/>
+            <option name="productionRule" value="productionJapanese:buyheavy_gun"/>
+            <option name="uses" value="1"/>
+            <option name="when" value="after:japaneseTechActivation"/>
+        </attachment>

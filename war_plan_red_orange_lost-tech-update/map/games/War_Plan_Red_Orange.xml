@@ -2703,6 +2703,30 @@
       <cost resource="PUs" quantity="17"/>
       <result resourceOrUnit="battleship" quantity="1"/>
     </productionRule>
+    <productionRule name="buycruiser_dy">
+        <cost resource="PUs" quantity="9"/>
+        <result resourceOrUnit="cruiser" quantity="1"/>
+    </productionRule>
+    <productionRule name="buydestroyer_dy">
+        <cost resource="PUs" quantity="6"/>
+        <result resourceOrUnit="destroyer" quantity="1"/>
+    </productionRule>
+    <productionRule name="buybattlecruiser_dy">
+        <cost resource="PUs" quantity="11"/>
+        <result resourceOrUnit="battlecruiser" quantity="1"/>
+    </productionRule>
+    <productionRule name="buybattleship_dy">
+        <cost resource="PUs" quantity="16"/>
+        <result resourceOrUnit="battleship" quantity="1"/>
+    </productionRule>
+    <productionRule name="buytransport_dy">
+        <cost resource="PUs" quantity="6"/>
+        <result resourceOrUnit="transport" quantity="1"/>
+    </productionRule>
+    <productionRule name="buysubmarine_dy">
+        <cost resource="PUs" quantity="5"/>
+        <result resourceOrUnit="submarine" quantity="1"/>
+    </productionRule>
     <productionRule name="buyfactory">
       <cost resource="PUs" quantity="20"/>
       <result resourceOrUnit="factory" quantity="1"/>
@@ -2712,7 +2736,7 @@
       <result resourceOrUnit="aaGun" quantity="1"/>
     </productionRule>
     <productionRule name="buytank">
-      <cost resource="PUs" quantity="6"/>
+      <cost resource="PUs" quantity="5"/>
       <result resourceOrUnit="tank" quantity="1"/>
     </productionRule>
 	<productionRule name="buytrench">
@@ -2720,8 +2744,8 @@
       <result resourceOrUnit="trench" quantity="1"/>
     </productionRule>
 	<productionRule name="buyconscript">
-      <cost resource="PUs" quantity="17"/>
-      <result resourceOrUnit="conscript" quantity="8"/>
+      <cost resource="PUs" quantity="2"/>
+      <result resourceOrUnit="conscript" quantity="1"/>
     </productionRule>
 	<productionRule name="buyheavy_gun">
       <cost resource="PUs" quantity="5"/>
@@ -3612,8 +3636,14 @@
       <option name="movement" value="2"/>
       <option name="transportCost" value="3"/>
       <option name="canBlitz" value="true"/>
-      <option name="attack" value="4"/>
+      <option name="attack" value="3"/>
       <option name="defense" value="2"/>
+      <option name="targetsAA" value="trench" />
+      <option name="offensiveAttackAA" value="3" />
+      <option name="isAAforCombatOnly" value="true" />
+      <option name="mayOverStackAA" value="true" />
+      <option name="maxAAattacks" value="2" />
+      <option name="maxRoundsAA" value="1" />
     </attachment>
 	<attachment name="unitAttachment" attachTo="trench" javaClass="UnitAttachment" type="unitType">
       <option name="defense" value="0"/>
@@ -6778,80 +6808,976 @@
         <option name="when" value="after:portugueseTechActivation"/>
     </attachment>
 
-    <!-- armour enables tank production -->
-    <attachment name="conditionAttachmentArmourJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
-    </attachment>
-    <attachment name="conditionAttachmentArmourPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="armour" count="1"/>
+<!-- Working Women -->
+
+    <attachment name="conditionAttachmentworkingWomenJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
     </attachment>
 
-    <!-- dockyards enables dockyards variant naval units -->
-    <attachment name="conditionAttachmentDockyardsJapanese" attachTo="Japanese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+    <attachment name="triggerAttachmentworkingWomenJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenJ"/>
+        <option name="productionRule" value="productionJapanese:buyartillery_w"/>
+        <option name="productionRule" value="productionJapanese:buyfighter_w"/>
+        <option name="productionRule" value="productionJapanese:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyadsChinese" attachTo="Chinese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="conditionAttachmentworkingWomenC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyardsAmericans" attachTo="Americans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="triggerAttachmentworkingWomenC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenC"/>
+        <option name="productionRule" value="productionChinese:buyartillery_w"/>
+        <option name="productionRule" value="productionChinese:buyfighter_w"/>
+        <option name="productionRule" value="productionChinese:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyadsBritish" attachTo="British" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="conditionAttachmentworkingWomenAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyardsGermans" attachTo="Germans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="triggerAttachmentworkingWomenAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenAm"/>
+        <option name="productionRule" value="productionAmericans:buyartillery_w"/>
+        <option name="productionRule" value="productionAmericans:buyfighter_w"/>
+        <option name="productionRule" value="productionAmericans:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyadsFrench" attachTo="French" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="conditionAttachmentworkingWomenB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyardsAustrians" attachTo="Austrians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="triggerAttachmentworkingWomenB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenB"/>
+        <option name="productionRule" value="productionBritish:buyartillery_w"/>
+        <option name="productionRule" value="productionBritish:buyfighter_w"/>
+        <option name="productionRule" value="productionBritish:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyardsItalians" attachTo="Italians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="conditionAttachmentworkingWomenG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyardsOttomans" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="triggerAttachmentworkingWomenG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenG"/>
+        <option name="productionRule" value="productionGermans:buyartillery_w"/>
+        <option name="productionRule" value="productionGermans:buyfighter_w"/>
+        <option name="productionRule" value="productionGermans:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyardsRussians" attachTo="Russians" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="conditionAttachmentworkingWomenF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyadsDutch" attachTo="Dutch" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="triggerAttachmentworkingWomenF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenF"/>
+        <option name="productionRule" value="productionFrench:buyartillery_w"/>
+        <option name="productionRule" value="productionFrench:buyfighter_w"/>
+        <option name="productionRule" value="productionFrench:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
     </attachment>
-    <attachment name="conditionAttachmentDockyardsPortuguese" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
-      <option name="techs" value="dockyards" count="1"/>
+
+    <attachment name="conditionAttachmentworkingWomenAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentworkingWomenAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenAu"/>
+        <option name="productionRule" value="productionAustrians:buyartillery_w"/>
+        <option name="productionRule" value="productionAustrians:buyfighter_w"/>
+        <option name="productionRule" value="productionAustrians:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentworkingWomenI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentworkingWomenI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenI"/>
+        <option name="productionRule" value="productionItalians:buyartillery_w"/>
+        <option name="productionRule" value="productionItalians:buyfighter_w"/>
+        <option name="productionRule" value="productionItalians:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentworkingWomenO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentworkingWomenO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenO"/>
+        <option name="productionRule" value="productionOttomans:buyartillery_w"/>
+        <option name="productionRule" value="productionOttomans:buyfighter_w"/>
+        <option name="productionRule" value="productionOttomans:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentworkingWomenR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentworkingWomenR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenR"/>
+        <option name="productionRule" value="productionRussians:buyartillery_w"/>
+        <option name="productionRule" value="productionRussians:buyfighter_w"/>
+        <option name="productionRule" value="productionRussians:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentworkingWomenD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentworkingWomenD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenD"/>
+        <option name="productionRule" value="productionDutch:buyartillery_w"/>
+        <option name="productionRule" value="productionDutch:buyfighter_w"/>
+        <option name="productionRule" value="productionDutch:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentworkingWomenP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="workingWomen" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentworkingWomenP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentworkingWomenP"/>
+        <option name="productionRule" value="productionPortuguese:buyartillery_w"/>
+        <option name="productionRule" value="productionPortuguese:buyfighter_w"/>
+        <option name="productionRule" value="productionPortuguese:-buyfighter"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
+    <!-- Mines -->
+
+    <attachment name="conditionAttachmentmineJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineJ"/>
+        <option name="productionRule" value="productionJapanese:buylandmine"/>
+        <option name="productionRule" value="productionJapanese:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineC"/>
+        <option name="productionRule" value="productionChinese:buylandmine"/>
+        <option name="productionRule" value="productionChinese:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineAm"/>
+        <option name="productionRule" value="productionAmericans:buylandmine"/>
+        <option name="productionRule" value="productionAmericans:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineB"/>
+        <option name="productionRule" value="productionBritish:buylandmine"/>
+        <option name="productionRule" value="productionBritish:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineG"/>
+        <option name="productionRule" value="productionGermans:buylandmine"/>
+        <option name="productionRule" value="productionGermans:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineF"/>
+        <option name="productionRule" value="productionFrench:buylandmine"/>
+        <option name="productionRule" value="productionFrench:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineAu"/>
+        <option name="productionRule" value="productionAustrians:buylandmine"/>
+        <option name="productionRule" value="productionAustrians:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineI"/>
+        <option name="productionRule" value="productionItalians:buylandmine"/>
+        <option name="productionRule" value="productionItalians:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineO"/>
+        <option name="productionRule" value="productionOttomans:buylandmine"/>
+        <option name="productionRule" value="productionOttomans:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineR"/>
+        <option name="productionRule" value="productionRussians:buylandmine"/>
+        <option name="productionRule" value="productionRussians:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineD"/>
+        <option name="productionRule" value="productionDutch:buylandmine"/>
+        <option name="productionRule" value="productionDutch:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentmineP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="mine" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentmineP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentmineP"/>
+        <option name="productionRule" value="productionPortuguese:buylandmine"/>
+        <option name="productionRule" value="productionPortuguese:buyseamine"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
+    <!-- Heavy Guns -->
+
+    <attachment name="conditionAttachmentheavyGunJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunJ"/>
+        <option name="productionRule" value="productionJapanese:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunC"/>
+        <option name="productionRule" value="productionChinese:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunAm"/>
+        <option name="productionRule" value="productionAmericans:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunB"/>
+        <option name="productionRule" value="productionBritish:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunG"/>
+        <option name="productionRule" value="productionGermans:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunF"/>
+        <option name="productionRule" value="productionFrench:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunAu"/>
+        <option name="productionRule" value="productionAustrians:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunI"/>
+        <option name="productionRule" value="productionItalians:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunO"/>
+        <option name="productionRule" value="productionOttomans:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunR"/>
+        <option name="productionRule" value="productionRussians:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunD"/>
+        <option name="productionRule" value="productionDutch:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentheavyGunP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="heavyGun" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentheavyGunP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentheavyGunP"/>
+        <option name="productionRule" value="productionPortuguese:buyheavy_gun"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
+    <!-- Dockyards -->
+
+    <attachment name="conditionAttachmentdockYardsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+         <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsJ"/>
+        <option name="productionRule" value="productionJapanese:buysubmarine_dy"/>
+        <option name="productionRule" value="productionJapanese:buydestroyer_dy"/>
+        <option name="productionRule" value="productionJapanese:buycruiser_dy"/>
+        <option name="productionRule" value="productionJapanese:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionJapanese:buybattleship_dy"/>
+        <option name="productionRule" value="productionJapanese:buytransport_dy"/>
+        <option name="productionRule" value="productionJapanese:-buysubmarine"/>
+        <option name="productionRule" value="productionJapanese:-buydestroyer"/>
+        <option name="productionRule" value="productionJapanese:-buycruiser"/>
+        <option name="productionRule" value="productionJapanese:-buybattlecruiser"/>
+        <option name="productionRule" value="productionJapanese:-buybattleship"/>
+        <option name="productionRule" value="productionJapanese:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsC"/>
+        <option name="productionRule" value="productionChinese:buysubmarine_dy"/>
+        <option name="productionRule" value="productionChinese:buydestroyer_dy"/>
+        <option name="productionRule" value="productionChinese:buycruiser_dy"/>
+        <option name="productionRule" value="productionChinese:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionChinese:buybattleship_dy"/>
+        <option name="productionRule" value="productionChinese:buytransport_dy"/>
+        <option name="productionRule" value="productionChinese:-buysubmarine"/>
+        <option name="productionRule" value="productionChinese:-buydestroyer"/>
+        <option name="productionRule" value="productionChinese:-buycruiser"/>
+        <option name="productionRule" value="productionChinese:-buybattlecruiser"/>
+        <option name="productionRule" value="productionChinese:-buybattleship"/>
+        <option name="productionRule" value="productionChinese:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsAm"/>
+        <option name="productionRule" value="productionAmericans:buysubmarine_dy"/>
+        <option name="productionRule" value="productionAmericans:buydestroyer_dy"/>
+        <option name="productionRule" value="productionAmericans:buycruiser_dy"/>
+        <option name="productionRule" value="productionAmericans:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionAmericans:buybattleship_dy"/>
+        <option name="productionRule" value="productionAmericans:buytransport_dy"/>
+        <option name="productionRule" value="productionAmericans:-buysubmarine"/>
+        <option name="productionRule" value="productionAmericans:-buydestroyer"/>
+        <option name="productionRule" value="productionAmericans:-buycruiser"/>
+        <option name="productionRule" value="productionAmericans:-buybattlecruiser"/>
+        <option name="productionRule" value="productionAmericans:-buybattleship"/>
+        <option name="productionRule" value="productionAmericans:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsB"/>
+        <option name="productionRule" value="productionBritish:buysubmarine_dy"/>
+        <option name="productionRule" value="productionBritish:buydestroyer_dy"/>
+        <option name="productionRule" value="productionBritish:buycruiser_dy"/>
+        <option name="productionRule" value="productionBritish:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionBritish:buybattleship_dy"/>
+        <option name="productionRule" value="productionBritish:buytransport_dy"/>
+        <option name="productionRule" value="productionBritish:-buysubmarine"/>
+        <option name="productionRule" value="productionBritish:-buydestroyer"/>
+        <option name="productionRule" value="productionBritish:-buycruiser"/>
+        <option name="productionRule" value="productionBritish:-buybattlecruiser"/>
+        <option name="productionRule" value="productionBritish:-buybattleship"/>
+        <option name="productionRule" value="productionBritish:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsG"/>
+        <option name="productionRule" value="productionGermans:buysubmarine_dy"/>
+        <option name="productionRule" value="productionGermans:buydestroyer_dy"/>
+        <option name="productionRule" value="productionGermans:buycruiser_dy"/>
+        <option name="productionRule" value="productionGermans:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionGermans:buybattleship_dy"/>
+        <option name="productionRule" value="productionGermans:buytransport_dy"/>
+        <option name="productionRule" value="productionGermans:-buysubmarine"/>
+        <option name="productionRule" value="productionGermans:-buydestroyer"/>
+        <option name="productionRule" value="productionGermans:-buycruiser"/>
+        <option name="productionRule" value="productionGermans:-buybattlecruiser"/>
+        <option name="productionRule" value="productionGermans:-buybattleship"/>
+        <option name="productionRule" value="productionGermans:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsF"/>
+        <option name="productionRule" value="productionFrench:buysubmarine_dy"/>
+        <option name="productionRule" value="productionFrench:buydestroyer_dy"/>
+        <option name="productionRule" value="productionFrench:buycruiser_dy"/>
+        <option name="productionRule" value="productionFrench:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionFrench:buybattleship_dy"/>
+        <option name="productionRule" value="productionFrench:buytransport_dy"/>
+        <option name="productionRule" value="productionFrench:-buysubmarine"/>
+        <option name="productionRule" value="productionFrench:-buydestroyer"/>
+        <option name="productionRule" value="productionFrench:-buycruiser"/>
+        <option name="productionRule" value="productionFrench:-buybattlecruiser"/>
+        <option name="productionRule" value="productionFrench:-buybattleship"/>
+        <option name="productionRule" value="productionFrench:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsAu"/>
+        <option name="productionRule" value="productionAustrians:buysubmarine_dy"/>
+        <option name="productionRule" value="productionAustrians:buydestroyer_dy"/>
+        <option name="productionRule" value="productionAustrians:buycruiser_dy"/>
+        <option name="productionRule" value="productionAustrians:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionAustrians:buybattleship_dy"/>
+        <option name="productionRule" value="productionAustrians:buytransport_dy"/>
+        <option name="productionRule" value="productionAustrians:-buysubmarine"/>
+        <option name="productionRule" value="productionAustrians:-buydestroyer"/>
+        <option name="productionRule" value="productionAustrians:-buycruiser"/>
+        <option name="productionRule" value="productionAustrians:-buybattlecruiser"/>
+        <option name="productionRule" value="productionAustrians:-buybattleship"/>
+        <option name="productionRule" value="productionAustrians:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsI"/>
+        <option name="productionRule" value="productionItalians:buysubmarine_dy"/>
+        <option name="productionRule" value="productionItalians:buydestroyer_dy"/>
+        <option name="productionRule" value="productionItalians:buycruiser_dy"/>
+        <option name="productionRule" value="productionItalians:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionItalians:buybattleship_dy"/>
+        <option name="productionRule" value="productionItalians:buytransport_dy"/>
+        <option name="productionRule" value="productionItalians:-buysubmarine"/>
+        <option name="productionRule" value="productionItalians:-buydestroyer"/>
+        <option name="productionRule" value="productionItalians:-buycruiser"/>
+        <option name="productionRule" value="productionItalians:-buybattlecruiser"/>
+        <option name="productionRule" value="productionItalians:-buybattleship"/>
+        <option name="productionRule" value="productionItalians:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsO"/>
+        <option name="productionRule" value="productionOttomans:buysubmarine_dy"/>
+        <option name="productionRule" value="productionOttomans:buydestroyer_dy"/>
+        <option name="productionRule" value="productionOttomans:buycruiser_dy"/>
+        <option name="productionRule" value="productionOttomans:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionOttomans:buybattleship_dy"/>
+        <option name="productionRule" value="productionOttomans:buytransport_dy"/>
+        <option name="productionRule" value="productionOttomans:-buysubmarine"/>
+        <option name="productionRule" value="productionOttomans:-buydestroyer"/>
+        <option name="productionRule" value="productionOttomans:-buycruiser"/>
+        <option name="productionRule" value="productionOttomans:-buybattlecruiser"/>
+        <option name="productionRule" value="productionOttomans:-buybattleship"/>
+        <option name="productionRule" value="productionOttomans:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsR"/>
+        <option name="productionRule" value="productionRussians:buysubmarine_dy"/>
+        <option name="productionRule" value="productionRussians:buydestroyer_dy"/>
+        <option name="productionRule" value="productionRussians:buycruiser_dy"/>
+        <option name="productionRule" value="productionRussians:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionRussians:buybattleship_dy"/>
+        <option name="productionRule" value="productionRussians:buytransport_dy"/>
+        <option name="productionRule" value="productionRussians:-buysubmarine"/>
+        <option name="productionRule" value="productionRussians:-buydestroyer"/>
+        <option name="productionRule" value="productionRussians:-buycruiser"/>
+        <option name="productionRule" value="productionRussians:-buybattlecruiser"/>
+        <option name="productionRule" value="productionRussians:-buybattleship"/>
+        <option name="productionRule" value="productionRussians:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsD"/>
+        <option name="productionRule" value="productionDutch:buysubmarine_dy"/>
+        <option name="productionRule" value="productionDutch:buydestroyer_dy"/>
+        <option name="productionRule" value="productionDutch:buycruiser_dy"/>
+        <option name="productionRule" value="productionDutch:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionDutch:buybattleship_dy"/>
+        <option name="productionRule" value="productionDutch:buytransport_dy"/>
+        <option name="productionRule" value="productionDutch:-buysubmarine"/>
+        <option name="productionRule" value="productionDutch:-buydestroyer"/>
+        <option name="productionRule" value="productionDutch:-buycruiser"/>
+        <option name="productionRule" value="productionDutch:-buybattlecruiser"/>
+        <option name="productionRule" value="productionDutch:-buybattleship"/>
+        <option name="productionRule" value="productionDutch:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentdockYardsP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="dockyards" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentdockYardsP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentdockYardsP"/>
+        <option name="productionRule" value="productionPortuguese:buysubmarine_dy"/>
+        <option name="productionRule" value="productionPortuguese:buydestroyer_dy"/>
+        <option name="productionRule" value="productionPortuguese:buycruiser_dy"/>
+        <option name="productionRule" value="productionPortuguese:buybattlecruiser_dy"/>
+        <option name="productionRule" value="productionPortuguese:buybattleship_dy"/>
+        <option name="productionRule" value="productionPortuguese:buytransport_dy"/>
+        <option name="productionRule" value="productionPortuguese:-buysubmarine"/>
+        <option name="productionRule" value="productionPortuguese:-buydestroyer"/>
+        <option name="productionRule" value="productionPortuguese:-buycruiser"/>
+        <option name="productionRule" value="productionPortuguese:-buybattlecruiser"/>
+        <option name="productionRule" value="productionPortuguese:-buybattleship"/>
+        <option name="productionRule" value="productionPortuguese:-buytransport"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
+<!-- Armour -->
+
+    <attachment name="conditionAttachmentarmourJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourJ"/>
+        <option name="productionRule" value="productionJapanese:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourC"/>
+        <option name="productionRule" value="productionChinese:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourAm"/>
+        <option name="productionRule" value="productionAmericans:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourB"/>
+        <option name="productionRule" value="productionBritish:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourG"/>
+        <option name="productionRule" value="productionGermans:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourF"/>
+        <option name="productionRule" value="productionFrench:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourAu"/>
+        <option name="productionRule" value="productionAustrians:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourI"/>
+        <option name="productionRule" value="productionItalians:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourO"/>
+        <option name="productionRule" value="productionOttomans:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourR"/>
+        <option name="productionRule" value="productionRussians:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourD"/>
+        <option name="productionRule" value="productionDutch:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentarmourP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="armour" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentarmourP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentarmourP"/>
+        <option name="productionRule" value="productionPortuguese:buytank"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
+    </attachment>
+
+<!-- Gas -->
+
+    <attachment name="conditionAttachmentgasJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasJ"/>
+        <option name="productionRule" value="productionJapanese:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:japaneseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasC" attachTo="Chinese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasC" attachTo="Chinese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasC"/>
+        <option name="productionRule" value="productionChinese:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:chineseTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasAm" attachTo="Americans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasAm" attachTo="Americans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasAm"/>
+        <option name="productionRule" value="productionAmericans:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:americansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasB" attachTo="British" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasB" attachTo="British" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasB"/>
+        <option name="productionRule" value="productionBritish:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:britishTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasG" attachTo="Germans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasG" attachTo="Germans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasG"/>
+        <option name="productionRule" value="productionGermans:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:germansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasF" attachTo="French" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasF" attachTo="French" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasF"/>
+        <option name="productionRule" value="productionFrench:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:frenchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasAu" attachTo="Austrians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasAu" attachTo="Austrians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasAu"/>
+        <option name="productionRule" value="productionAustrians:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:austriansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasI" attachTo="Italians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasI" attachTo="Italians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasI"/>
+        <option name="productionRule" value="productionItalians:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:italiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasO" attachTo="Ottomans" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasO" attachTo="Ottomans" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasO"/>
+        <option name="productionRule" value="productionOttomans:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:ottomansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasR" attachTo="Russians" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasR" attachTo="Russians" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasR"/>
+        <option name="productionRule" value="productionRussians:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:russiansTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasD" attachTo="Dutch" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasD" attachTo="Dutch" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasD"/>
+        <option name="productionRule" value="productionDutch:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:dutchTechActivation"/>
+    </attachment>
+
+    <attachment name="conditionAttachmentgasP" attachTo="Portuguese" javaClass="RulesAttachment" type="player">
+        <option name="techs" value="gas" count="1"/>
+    </attachment>
+
+    <attachment name="triggerAttachmentgasP" attachTo="Portuguese" javaClass="TriggerAttachment" type="player">
+        <option name="trigger" value="conditionAttachmentgasP"/>
+        <option name="productionRule" value="productionPortuguese:buygas"/>
+        <option name="uses" value="1"/>
+        <option name="when" value="after:portugueseTechActivation"/>
     </attachment>
 
 <!--  National Objectives -->

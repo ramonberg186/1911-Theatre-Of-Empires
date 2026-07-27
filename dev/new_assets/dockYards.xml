@@ -1,0 +1,46 @@
+             <productionRule name="buycruiser_dy">
+                 <cost resource="PUs" quantity="9"/>
+                 <result resourceOrUnit="cruiser" quantity="1"/>
+             </productionRule>
+             <productionRule name="buydestroyer_dy">
+                 <cost resource="PUs" quantity="6"/>
+                 <result resourceOrUnit="destroyer" quantity="1"/>
+             </productionRule>
+             <productionRule name="buybattlecruiser_dy">
+                 <cost resource="PUs" quantity="11"/>
+                 <result resourceOrUnit="battlecruiser" quantity="1"/>
+             </productionRule>
+             <productionRule name="buybattleship_dy">
+                 <cost resource="PUs" quantity="16"/>
+                 <result resourceOrUnit="battleship" quantity="1"/>
+             </productionRule>
+             <productionRule name="buytransport_dy">
+                 <cost resource="PUs" quantity="6"/>
+                 <result resourceOrUnit="transport" quantity="1"/>
+             </productionRule>
+             <productionRule name="buysubmarine_dy">
+                 <cost resource="PUs" quantity="5"/>
+                 <result resourceOrUnit="submarine" quantity="1"/>
+             </productionRule>
+
+        <attachment name="conditionAttachmentdockYardsJ" attachTo="Japanese" javaClass="RulesAttachment" type="player">
+             <option name="techs" value="dockyards" count="1"/>
+        </attachment>
+
+        <attachment name="triggerAttachmentdockYardsJ" attachTo="Japanese" javaClass="TriggerAttachment" type="player">
+            <option name="trigger" value="conditionAttachmentdockYardsJ"/>
+            <option name="productionRule" value="productionJapanese:buysubmarine_dy"/>
+            <option name="productionRule" value="productionJapanese:buydestroyer_dy"/>
+            <option name="productionRule" value="productionJapanese:buycruiser_dy"/>
+            <option name="productionRule" value="productionJapanese:buybattlecruiser_dy"/>
+            <option name="productionRule" value="productionJapanese:buybattleship_dy"/>
+            <option name="productionRule" value="productionJapanese:buytransport_dy"/>
+            <option name="productionRule" value="productionJapanese:-buysubmarine"/>
+            <option name="productionRule" value="productionJapanese:-buydestroyer"/>
+            <option name="productionRule" value="productionJapanese:-buycruiser"/>
+            <option name="productionRule" value="productionJapanese:-buybattlecruiser"/>
+            <option name="productionRule" value="productionJapanese:-buybattleship"/>
+            <option name="productionRule" value="productionJapanese:-buytransport"/>
+            <option name="uses" value="1"/>
+            <option name="when" value="after:japaneseTechActivation"/>
+        </attachment>
