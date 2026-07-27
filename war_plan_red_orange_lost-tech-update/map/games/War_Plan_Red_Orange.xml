@@ -3509,7 +3509,6 @@
     </attachment>
     <attachment name="techAbilityAttachment" attachTo="subWarfare" javaClass="TechAbilityAttachment" type="technology">
       <option name="attackBonus" value="1:submarine"/>
-      <option name="defenseBonus" value="1:submarine"/>
     </attachment>
     <attachment name="techAbilityAttachment" attachTo="convoys" javaClass="TechAbilityAttachment" type="technology">
       <option name="defenseBonus" value="1:destroyer"/>
@@ -9645,191 +9644,69 @@
     <property name="notes">
       <value><![CDATA[== War Plan Red-Orange Alpha <br>
 A scenario based around an early Second Sino-Japanese War that triggers a war between Japan and the US, the US and the British Empire, and in short order, all the world's Great Powers. <br>
-<table border="1">
-    <tr>
-        <th>Technology Unlock Order</th>
-    </tr>
+Technology Tree
 
-    <tr>
-        <td>Japanese</td>
-        <td>Chinese</td>
-        <td>Americans</td>
-		<td>British</td>
-        <td>Germans</td>
-        <td>French</td>
-		<td>Austrians</td>
-        <td>Italians</td>
-        <td>Ottomans</td>
-		<td>Russians</td>
-        <td>Dutch</td>
-        <td>Portuguese</td>
-    </tr>
-
-    <tr>
-        <td>Zeppelins</td>
-        <td>Conscripts</td>
-        <td>Mines</td>
-		<td>Mines</td>
-        <td>Gas</td>
-        <td>Heavy Guns</td>
-		<td>Industry</td>
-        <td>Late Fighters</td>
-        <td>Mines</td>
-		<td>Conscripts</td>
-        <td>Industry</td>
-        <td>Heavy Guns</td>
-    </tr>
-
-    <tr>
-        <td>Aircraft Carriers</td>
-        <td>Industry</td>
-        <td>Late Fighters</td>
-		<td>Heavy Guns</td>
-        <td>Zeppelins</td>
-        <td>Mines</td>
-		<td>Zeppelins</td>
-        <td>Heavy Guns</td>
-        <td>Late Fighters</td>
-		<td>Heavy Guns</td>
-        <td>Heavy Guns</td>
-        <td>Mines</td>
-    </tr>
-
-    <tr>
-        <td>Industry</td>
-        <td>Bunkers</td>
-        <td>Industry</td>
-		<td>Tanks</td>
-        <td>Industry</td>
-        <td>Bunkers</td>
-		<td>Gas</td>
-        <td>Bunkers</td>
-        <td>Gas</td>
-		<td>Bunkers</td>
-        <td>Gas</td>
-        <td>Aircraft Carriers</td>
-    </tr>
-
-    <tr>
-        <td>Late Fighters</td>
-        <td>Heavy Guns</td>
-        <td>Tanks</td>
-		<td>Aircraft Carriers</td>
-        <td>Mines</td>
-        <td>Tanks</td>
-		<td>Mines</td>
-        <td>Aircraft Carriers</td>
-        <td>Bunkers</td>
-		<td>Tanks</td>
-        <td>Zeppelins</td>
-        <td>Late Fighters</td>
-    </tr>
-
-    <tr>
-        <td>Heavy Guns</td>
-        <td>Gas</td>
-        <td>Zeppelins</td>
-		<td>Late Fighters</td>
-        <td>Bunkers</td>
-        <td>Conscripts</td>
-		<td>Aircraft Carriers</td>
-        <td>Mines</td>
-        <td>Tanks</td>
-		<td>Industry</td>
-        <td>Conscripts</td>
-        <td>Conscripts</td>
-    </tr>
-
-    <tr>
-        <td>Mines</td>
-        <td>Mines</td>
-        <td>Aircraft Carriers</td>
-		<td>Conscripts</td>
-        <td>Tanks</td>
-        <td>Aircraft Carriers</td>
-		<td>Conscripts</td>
-        <td>Conscripts</td>
-        <td>Aircraft Carriers</td>
-		<td>Mines</td>
-        <td>Mines</td>
-        <td>Bunkers</td>
-    </tr>
-
-    <tr>
-        <td>Bunkers</td>
-        <td>Tanks</td>
-        <td>Heavy Guns</td>
-		<td>Zeppelins</td>
-        <td>Late Fighters</td>
-        <td>Gas</td>
-		<td>Tanks</td>
-        <td>Tanks</td>
-        <td>Heavy Guns</td>
-		<td>Late Fighters</td>
-        <td>Aircraft Carriers</td>
-        <td>Industry</td>
-    </tr>
-
-    <tr>
-        <td>Tanks</td>
-        <td>Zeppelins</td>
-        <td>Gas</td>
-		<td>Industry</td>
-        <td>Conscripts</td>
-        <td>Industry</td>
-		<td>Late Fighters</td>
-        <td>Gas</td>
-        <td>Zeppelins</td>
-		<td>Zeppelins</td>
-        <td>Bunkers</td>
-        <td>Tanks</td>
-    </tr>
-
-    <tr>
-        <td>Conscripts</td>
-        <td>Late Fighters</td>
-        <td>Conscripts</td>
-		<td>Gas</td>
-        <td>Aircraft Carriers</td>
-        <td>Zeppelins</td>
-		<td>Heavy Guns</td>
-        <td>Industry</td>
-        <td>Industry</td>
-		<td>Gas</td>
-        <td>Tanks</td>
-        <td>Gas</td>
-    </tr>
-
-    <tr>
-        <td>Gas</td>
-        <td>Aircraft Carriers</td>
-        <td>Bunkers</td>
-		<td>Bunkers</td>
-        <td>Heavy Guns</td>
-        <td>Late Fighters</td>
-		<td>Bunkers</td>
-        <td>Zeppelins</td>
-        <td>Conscripts</td>
-		<td>Aircraft Carriers</td>
-        <td>Late Fighters</td>
-        <td>Zeppelins</td>
-    </tr>
-</table>
-<br>
-
-<h2> Tech Unit Overview:</h2><br>
+├── Economic Reforms (Propaganda)   <br>
+│   ├── Working Women               <br>
+│   ├── War Bonds                   <br>
+│   └── Industry                    <br>
+│                                   <br>
+├── Science                         <br>
+│   ├── Late Fighter                <br>
+│   ├── Aircraft Carrier            <br>
+│   └── Zeppelins                   <br>
+│                                   <br>
+├── Defensive Tactics (Conscripts)  <br>
+│   ├── Bunkers                     <br>
+│   ├── Mines                          <br>
+│   └── Heavy Guns                  <br>
+│                                    <br>
+├── Fleet Action                    <br>
+│   ├── Convoys                     <br>
+│   ├── Sub Warfare                 <br>
+│   └── Dockyards                   <br>
+│                                   <br>
+└── Offensive Tactics (Mobile Warfare)<br>
+    ├── Gas                             <br>
+    ├── Creeping Barrage                    <br>
+    └── Armour                                      <br>
+<h2> Tech Overview:</h2><br>
+<h3>Economic Reforms</h3><br>
+Gives 9 pus free units on capitol per turn (default is inf). <br><br>
+<h3>Working Women</h3><br>
+Knocks down the cost of artillery to 3.5 and fighters to 7. <br><br>
+<h3>Working Women</h3><br>
+Knocks down the cost of artillery to 3.5 and fighters to 7. <br><br>
+<h3>War Bonds</h3><br>
+2d6 extra pus per turn. <br><br>
+<h3>Industry</h3><br>
+Increases produciton capacity of territories with at least 2 production by 2. <br><br>
+<h3>Science</h3><br>
+Gives 1 free tech token per turn. <br><br>
+<h3>Fleet Action</h3><br>
+Gives Battleships and battlecruisers 1 attack bonus. <br><br>
+<h3>Convoys</h3><br>
+Gives destroyers and cruisers 1 defense bonus. <br><br>
+<h3>Sub Warfare</h3><br>
+Gives submarines 1 attack bonus. <br><br>
+<h3>Dockyards</h3><br>
+Reduces cost of all naval units by 1. <br><br>
+<h3>Offensive Tactics</h3><br>
+Gives cavalry 1 movement bonus. <br><br>
+<h3>Creeping Barrage</h3><br>
+1 attack bonus to artillery. <br><br>
 <h3>Heavy Guns</h3><br>
 Land unit, 5 cost, 2/4/1. Artillery. 5 transporting cost. <br><br>
-<h3>Tanks</h3><br>
-Land unit, 6 cost, 4/2/2. 3 transporting cost. <br><br>
-<h3>Conscripts</h3><br>
-Land unit, 17 cost for 8, 0/1/1. 2 transporting cost. <br><br>
+<h3>Armour</h3><br>
+Land unit, 5 cost, 4/2/2. 3 transporting cost. Bunker buster: rolls 2d6 at 3 to instantly destroy trenches at the beginning of battle. <br><br>
+<h3>Defensive Tactics</h3><br>
+Unlocks conscripts, Land unit, 2 cost, 0/1/1. 2 transporting cost. <br><br>
 <h3>Gas</h3><br>
-Land unit, 4 cost, 4/0/3. Hits once on attack, then suicides. Destroyed when captured. <br><br>
+Land unit, 4 cost, 5/0/3. Hits once on attack, then suicides. Destroyed when captured. <br><br>
 <h3>Zeppelins</h3><br>
-Air unit, 14 cost, 2/1/6. Can perform bombing raids. Cannot land on carriers. <br><br>
+Air unit, 12 cost, 2/1/6. Can perform bombing raids. Cannot land on carriers. <br><br>
 <h3>Late Fighters</h3><br>
-Air unit, 10 cost, 3/4/4. 1 carrier cost. <br><br>
+Air unit, 10 cost, 3/4/4. 1 carrier cost. Supports infantry <br><br>
 <h3>Aircraft Carriers</h3><br>
 Sea unit, 12 cost, 1/1/2. 2 carrying capacity. <br><br>
 <h3>Mines</h3><br>
@@ -9845,6 +9722,10 @@ PGsquig <br>
 Ramon <br>
 Prona <br>
 And many more people with wonderful ideas who greatly helped the project! <br><br>
+
+Version 0.3.2: Tech re-work from Lost. <br>
+
+Version 0.3.1: Additional balance changes courtesy of Ramon. <br>
 
 Version 0.3.0: Added the playable countries of Portuguese and Dutch, as well as a brand-new tech system! And of course rebalancing. <br>
 
