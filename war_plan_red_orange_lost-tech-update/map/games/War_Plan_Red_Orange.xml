@@ -2663,6 +2663,10 @@
       <cost resource="PUs" quantity="4"/>
       <result resourceOrUnit="artillery" quantity="1"/>
     </productionRule>
+    <productionRule name="buyartillery_w">
+      <cost resource="PUs" quantity="7"/>
+      <result resourceOrUnit="artillery" quantity="2"/>
+    </productionRule>
 	<productionRule name="buygas">
       <cost resource="PUs" quantity="4"/>
       <result resourceOrUnit="gas" quantity="1"/>
@@ -2673,6 +2677,10 @@
     </productionRule>
     <productionRule name="buyfighter">
       <cost resource="PUs" quantity="8"/>
+      <result resourceOrUnit="fighter" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyfighter_w">
+      <cost resource="PUs" quantity="7"/>
       <result resourceOrUnit="fighter" quantity="1"/>
     </productionRule>
     <productionRule name="buytransport">
