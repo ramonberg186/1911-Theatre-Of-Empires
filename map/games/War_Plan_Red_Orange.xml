@@ -4810,17 +4810,13 @@
       <option name="production" value="3"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Borneo" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="4"/>
+      <option name="production" value="3"/>
 </attachment>
-<attachment name="territoryAttachment" attachTo="Batavia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="4"/>
-</attachment>
-
 <attachment name="territoryAttachment" attachTo="East Borneo" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="4"/>
+      <option name="production" value="3"/>
  </attachment>
     <attachment name="territoryAttachment" attachTo="Celebes" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="4"/>
+      <option name="production" value="2"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Ceylon" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -4838,7 +4834,7 @@
       <option name="production" value="4"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Batavia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="8"/>
+      <option name="production" value="6"/>
 <option name="capital" value="Dutch"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Madura" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4851,10 +4847,10 @@
       <option name="production" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Sumatra" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="4"/>
+      <option name="production" value="3"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Sumatra" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="4"/>
+      <option name="production" value="3"/>
  </attachment>
     <attachment name="territoryAttachment" attachTo="Transvaal" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -4863,19 +4859,19 @@
       <option name="production" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Choson" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1"/>
+      <option name="production" value="2"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Chubu" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="3"/>
+      <option name="production" value="4"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Chugoku" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="2"/>
+      <option name="production" value="4"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Formosa" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="3"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Hanguk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1"/>
+      <option name="production" value="2"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Hokkaido" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="4"/>
@@ -4899,7 +4895,7 @@
       <option name="production" value="2"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Sakhalin" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1"/>
+      <option name="production" value="2"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Shikoku" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="3"/>
@@ -5101,7 +5097,7 @@
 </attachment>
 
 <attachment name="territoryAttachment" attachTo="Sea Zone 1 Hudson Bay" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1"/>
+      <option name="production" value="0"/>
       <option name="blockadeZone" value="true"/>
 </attachment>
 
@@ -5410,6 +5406,7 @@
 
 <attachment name="territoryAttachment" attachTo="Sea Zone 64 Sea of Azov" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
 <option name="production" value="0"/>
+<option name="blockadeZone" value="true"/>
 </attachment>
 
 <attachment name="territoryAttachment" attachTo="Sea Zone 66 Black Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5565,9 +5562,14 @@
       <option name="blockadeZone" value="true"/>
 </attachment>
 
-<attachment name="territoryAttachment" attachTo="Sea Zone 123 Banda Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"> <option name="production" value="0"/> </attachment>
+<attachment name="territoryAttachment" attachTo="Sea Zone 123 Banda Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"> 
+<option name="production" value="0"/> 
+<option name="blockadeZone" value="true"/>
+</attachment>
 
-<attachment name="territoryAttachment" attachTo="Sea Zone 124 Celebes Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"> <option name="production" value="0"/> </attachment>
+<attachment name="territoryAttachment" attachTo="Sea Zone 124 Celebes Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+<option name="blockadeZone" value="true"/>
+ <option name="production" value="0"/> </attachment>
 
 <attachment name="territoryAttachment" attachTo="Sea Zone 125 Sulu Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"> <option name="production" value="0"/> </attachment>
 
@@ -5614,8 +5616,8 @@
 <attachment name="territoryAttachment" attachTo="Sea Zone 135 Pacific Ocean" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"> <option name="production" value="0"/> </attachment>
 
 <attachment name="territoryAttachment" attachTo="Sea Zone 136 East China Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="10"/>
-      <option name="blockadeZone" value="false"/>
+      <option name="production" value="0"/>
+      <option name="blockadeZone" value="true"/>
 </attachment>
 
 <attachment name="territoryAttachment" attachTo="Sea Zone 137 Yellow Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"> <option name="production" value="0"/> </attachment>
@@ -6909,9 +6911,9 @@
 
  <attachment name="objectiveAttachment_Japanese_1_Control_Dutch_East_Indies" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 
-      <option name="objectiveValue" value="20"/>
+      <option name="objectiveValue" value="10"/>
 
-      <option name="alliedOwnershipTerritories" value="Java:Sumatra:Borneo:Celebes" count="4"/>
+      <option name="alliedOwnershipTerritories" value="Java:North Sumatra:Sumatra:East Borneo:Borneo:Celebes:Batavia" count="7"/>
 
     </attachment> 
 
@@ -7666,7 +7668,7 @@
 	  <unitPlacement unitType="infantry" territory="New South Wales" quantity="2" owner="British"/>
 	  <unitPlacement unitType="infantry" territory="Sydney-Canberra" quantity="3" owner="British"/>
 	  <unitPlacement unitType="artillery" territory="Sydney-Canberra" quantity="1" owner="British"/>
-	  <unitPlacement unitType="transport" territory="Sea Zone 115 Tasman Sea" quantity="2" owner="British"/>
+	  <unitPlacement unitType="transport" territory="Sea Zone 115 Tasman Sea" quantity="1" owner="British"/>
 	  <unitPlacement unitType="cruiser" territory="Sea Zone 115 Tasman Sea" quantity="1" owner="British"/>
 	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 115 Tasman Sea" quantity="1" owner="British"/>
 	  <unitPlacement unitType="battleship" territory="Sea Zone 115 Tasman Sea" quantity="1" owner="British"/>
@@ -7772,13 +7774,14 @@
 	  <unitPlacement unitType="infantry" territory="Singapore" quantity="2" owner="British"/>
 	  <unitPlacement unitType="artillery" territory="Singapore" quantity="2" owner="British"/>
 	  <unitPlacement unitType="infantry" territory="Sarawak" quantity="1" owner="British"/>
-	  <unitPlacement unitType="transport" territory="Sea Zone 84 Andaman Sea" quantity="1" owner="British"/>
 	  <unitPlacement unitType="destroyer" territory="Sea Zone 84 Andaman Sea" quantity="1" owner="British"/>
 	  <unitPlacement unitType="infantry" territory="Hong Kong" quantity="3" owner="British"/>
 	  <unitPlacement unitType="artillery" territory="Hong Kong" quantity="2" owner="British"/>
-	  <unitPlacement unitType="transport" territory="Sea Zone 129 South China Sea" quantity="2" owner="British"/>
-	  <unitPlacement unitType="cruiser" territory="Sea Zone 129 South China Sea" quantity="2" owner="British"/>
-	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 129 South China Sea" quantity="1" owner="British"/>
+	  <unitPlacement unitType="transport" territory="Sea Zone 129 South China Sea" quantity="1" owner="British"/>
+	 <unitPlacement unitType="transport" territory="Sea Zone 129 South China Sea" quantity="1" owner="Japanese"/>
+
+	  <unitPlacement unitType="cruiser" territory="Sea Zone 129 South China Sea" quantity="1" owner="British"/>
+	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 129 South China Sea" quantity="1" owner="Japanese"/>
 	  <unitPlacement unitType="infantry" territory="Shanghai 3" quantity="5" owner="British"/>
 	  <unitPlacement unitType="artillery" territory="Shanghai 3" quantity="1" owner="British"/>
 	  <unitPlacement unitType="transport" territory="Sea Zone 54 Alboran Sea" quantity="1" owner="British"/>
@@ -7843,6 +7846,8 @@
 	  <unitPlacement unitType="artillery" territory="Oregon" quantity="1" owner="Americans"/>
 	  <unitPlacement unitType="destroyer" territory="Sea Zone 153 Pacific Ocean" quantity="2" owner="Americans"/>
 	  <unitPlacement unitType="cruiser" territory="Sea Zone 153 Pacific Ocean" quantity="1" owner="Americans"/>
+	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 153 Pacific Ocean" quantity="1" owner="Americans"/>
+
 	  <unitPlacement unitType="battleship" territory="Sea Zone 153 Pacific Ocean" quantity="1" owner="Americans"/>
 	  <unitPlacement unitType="transport" territory="Sea Zone 147 Gulf of California" quantity="1" owner="Americans"/>
 	  <unitPlacement unitType="destroyer" territory="Sea Zone 147 Gulf of California" quantity="1" owner="Americans"/>
@@ -8037,6 +8042,8 @@
 	  <unitPlacement unitType="artillery" territory="Solomon Islands" quantity="1" owner="Germans"/>
 	  <unitPlacement unitType="transport" territory="Sea Zone 122 Bismarck Sea" quantity="1" owner="Germans"/>
 	  <unitPlacement unitType="submarine" territory="Sea Zone 122 Bismarck Sea" quantity="2" owner="Germans"/>
+	<unitPlacement unitType="destroyer" territory="Sea Zone 122 Bismarck Sea" quantity="1" owner="Dutch"/>
+
 	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 122 Bismarck Sea" quantity="1" owner="Germans"/>
 	  <unitPlacement unitType="battleship" territory="Sea Zone 122 Bismarck Sea" quantity="1" owner="Germans"/>
 	  <unitPlacement unitType="submarine" territory="Sea Zone 132 Pacific Ocean" quantity="1" owner="Germans"/>
@@ -8151,7 +8158,8 @@
 	  <unitPlacement unitType="infantry" territory="Croatia" quantity="1" owner="Austrians"/>
 	  <unitPlacement unitType="artillery" territory="Croatia" quantity="1" owner="Austrians"/>
 	  <unitPlacement unitType="infantry" territory="Bosnia" quantity="2" owner="Austrians"/>
-	  <unitPlacement unitType="infantry" territory="Baranya" quantity="1" owner="Austrians"/>
+	  <unitPlacement unitType="infantry" territory="Baranya" quantity="2" owner="Austrians"/>
+		  <unitPlacement unitType="artillery" territory="Baranya" quantity="1" owner="Austrians"/>
 	  <unitPlacement unitType="infantry" territory="Transylvania" quantity="1" owner="Austrians"/>
 	  <unitPlacement unitType="artillery" territory="Transylvania" quantity="1" owner="Austrians"/>
 	  <unitPlacement unitType="cavalry" territory="Transylvania" quantity="1" owner="Austrians"/>
@@ -8451,7 +8459,7 @@
 	  <unitPlacement unitType="cruiser" territory="Sea Zone 128 Gulf of Tonkin" quantity="1" owner="Chinese"/>
 	  
 	  <unitPlacement unitType="factory" territory="Amsterdam" quantity="1" owner="Dutch"/>
-	  <unitPlacement unitType="factory" territory="Java" quantity="1" owner="Dutch"/>
+	 
 	 
 	  <unitPlacement unitType="infantry" territory="Netherlands" quantity="2" owner="Dutch"/>
 	  <unitPlacement unitType="artillery" territory="Netherlands" quantity="1" owner="Dutch"/>
@@ -8473,12 +8481,17 @@
 	  <unitPlacement unitType="infantry" territory="Pretoria" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="artillery" territory="Pretoria" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="infantry" territory="Java" quantity="2" owner="Dutch"/>
-	  <unitPlacement unitType="artillery" territory="Java" quantity="1" owner="Dutch"/>
-	  <unitPlacement unitType="infantry" territory="Sumatra" quantity="3" owner="Dutch"/>
- <unitPlacement unitType="infantry" territory="North Sumatra" quantity="1" owner="Dutch"/>
+	  <unitPlacement unitType="artillery" territory="Java" quantity="2" owner="Dutch"/>
+	  <unitPlacement unitType="infantry" territory="Sumatra" quantity="4" owner="Dutch"/>
+ <unitPlacement unitType="infantry" territory="North Sumatra" quantity="2" owner="Dutch"/>
 	  <unitPlacement unitType="artillery" territory="Sumatra" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="infantry" territory="East Borneo" quantity="2" owner="Dutch"/>
-	<unitPlacement unitType="infantry" territory="Batavia" quantity="2" owner="Dutch"/>
+	<unitPlacement unitType="infantry" territory="Batavia" quantity="4" owner="Dutch"/>
+	<unitPlacement unitType="factory" territory="Batavia" quantity="1" owner="Dutch"/>
+	<unitPlacement unitType="artillery" territory="Batavia" quantity="2" owner="Dutch"/>
+	<unitPlacement unitType="trench" territory="Batavia" quantity="3" owner="Dutch"/>
+	<unitPlacement unitType="landmine" territory="Batavia" quantity="1" owner="Dutch"/>
+
  <unitPlacement unitType="infantry" territory="Borneo" quantity="6" owner="Dutch"/>
 
 	  <unitPlacement unitType="artillery" territory="East Borneo" quantity="1" owner="Dutch"/>
@@ -8491,16 +8504,18 @@
 	  <unitPlacement unitType="infantry" territory="Celebes" quantity="2" owner="Dutch"/>
 	  <unitPlacement unitType="cavalry" territory="Celebes" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="infantry" territory="Dutch New Guinea" quantity="2" owner="Dutch"/>
-	  <unitPlacement unitType="transport" territory="Sea Zone 118 Java Sea" quantity="1" owner="Dutch"/>
+	  <unitPlacement unitType="transport" territory="Sea Zone 118 Java Sea" quantity="2" owner="Dutch"/>
+
   <unitPlacement unitType="battleship" territory="Sea Zone 118 Java Sea" quantity="1" owner="Dutch"/>
-	  <unitPlacement unitType="cruiser" territory="Sea Zone 118 Java Sea" quantity="1" owner="Dutch"/>
+	  <unitPlacement unitType="cruiser" territory="Sea Zone 118 Java Sea" quantity="2" owner="Dutch"/>
 	  <unitPlacement unitType="battlecruiser" territory="Sea Zone 118 Java Sea" quantity="1" owner="Dutch"/>
-	  <unitPlacement unitType="destroyer" territory="Sea Zone 126 Java Sea" quantity="1" owner="Dutch"/>
+	  <unitPlacement unitType="destroyer" territory="Sea Zone 126 Java Sea" quantity="2" owner="Dutch"/>
 	  <unitPlacement unitType="cruiser" territory="Sea Zone 126 Java Sea" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="transport" territory="Sea Zone 124 Celebes Sea" quantity="1" owner="Dutch"/>
 	  <unitPlacement unitType="submarine" territory="Sea Zone 124 Celebes Sea" quantity="2" owner="Dutch"/>
 	  <unitPlacement unitType="destroyer" territory="Sea Zone 124 Celebes Sea" quantity="1" owner="Dutch"/>
-	  
+	  <unitPlacement unitType="submarine" territory="Sea Zone 123 Banda Sea" quantity="1" owner="Dutch"/>
+
 	  <unitPlacement unitType="factory" territory="Lisbon" quantity="1" owner="Portuguese"/>
 	  <unitPlacement unitType="factory" territory="Goa" quantity="1" owner="Portuguese"/>
 	  <unitPlacement unitType="factory" territory="East Timor" quantity="1" owner="Portuguese"/>
@@ -8623,18 +8638,18 @@
 	
     </unitInitialize>
     <resourceInitialize>
-	  <resourceGiven player="Japanese" resource="PUs" quantity="51"/>
-	  <resourceGiven player="Chinese" resource="PUs" quantity="68"/>
-	  <resourceGiven player="Americans" resource="PUs" quantity="90"/>
-	  <resourceGiven player="British" resource="PUs" quantity="177"/>
-	  <resourceGiven player="Germans" resource="PUs" quantity="131"/>
-	  <resourceGiven player="French" resource="PUs" quantity="94"/>
-      <resourceGiven player="Austrians" resource="PUs" quantity="68"/>
-	  <resourceGiven player="Italians" resource="PUs" quantity="46"/>
-      <resourceGiven player="Ottomans" resource="PUs" quantity="67"/>
-      <resourceGiven player="Russians" resource="PUs" quantity="111"/>
-	  <resourceGiven player="Dutch" resource="PUs" quantity="44"/>
-	  <resourceGiven player="Portuguese" resource="PUs" quantity="35"/>
+	  <resourceGiven player="Japanese" resource="PUs" quantity="52"/>
+	  <resourceGiven player="Chinese" resource="PUs" quantity="67"/>
+	  <resourceGiven player="Americans" resource="PUs" quantity="80"/>
+	  <resourceGiven player="British" resource="PUs" quantity="151"/>
+	  <resourceGiven player="Germans" resource="PUs" quantity="109"/>
+	  <resourceGiven player="French" resource="PUs" quantity="86"/>
+      <resourceGiven player="Austrians" resource="PUs" quantity="67"/>
+	  <resourceGiven player="Italians" resource="PUs" quantity="43"/>
+      <resourceGiven player="Ottomans" resource="PUs" quantity="58"/>
+      <resourceGiven player="Russians" resource="PUs" quantity="90"/>
+	  <resourceGiven player="Dutch" resource="PUs" quantity="45"/>
+	  <resourceGiven player="Portuguese" resource="PUs" quantity="46"/>
 
     </resourceInitialize>
   </initialize>
