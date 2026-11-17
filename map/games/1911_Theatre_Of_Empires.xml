@@ -3715,8 +3715,18 @@ v<connection t1="Bukovina" t2="Galicia"/>
       <option name="transportCost" value="3"/>
       <option name="attack" value="2"/>
       <option name="defense" value="2"/>
-      <option name="artillery" value="true"/>
     </attachment>
+<attachment name="supportAttachment_artillery" attachTo="artillery" javaClass="UnitSupportAttachment" type="unitType">
+    <option name="faction" value="allied"/>
+    <option name="unitType" value="infantry:marine:conscript:cavalry:flamethrower"/>
+    <option name="side" value="offence"/>
+    <option name="dice" value="strength"/>
+    <option name="bonus" value="1"/>
+    <option name="number" value="1"/>
+	<option name="bonusType" value="Artillery"/>
+    <option name="players" value="Chinese:Japanese:Americans:British:Germans:French:Austrians:Italians:Ottomans:Russians:Dutch:Portuguese"/>
+</attachment>
+	  
 	<attachment name="unitAttachment" attachTo="gas" javaClass="UnitAttachment" type="unitType">
       <option name="transportCost" value="2"/>
       <option name="attack" value="4"/>
@@ -3894,7 +3904,7 @@ v<connection t1="Bukovina" t2="Galicia"/>
 		<option name="dice" value="strength"/>
 		<option name="bonus" value="1"/>
 		<option name="number" value="3"/>
-		<option name="bonusType" value="Artillery"/>
+		<option name="bonusType" value="Balloon"/>
 		<option name="players" value="Chinese:Japanese:Americans:British:Germans:French:Austrians:Italians:Ottomans:Russians:Dutch:Portuguese"/>
 	</attachment>
 
